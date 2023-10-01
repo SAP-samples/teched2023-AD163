@@ -1,38 +1,55 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD163)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD163)
-# Session ID - Session Title
+![image](https://github.com/SAP-samples/teched2023-AD163/assets/34297037/63af953e-e217-41d8-8753-bd25de93c7f4)[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD163)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD163)
+# AD163 - Extend Your Sales Order Process in SAP S/4HANA with SAP Build
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called **AD163 - Extend Your Sales Order Process in SAP S/4HANA with SAP Build**. 
+
+**Billing block** is applied in Sales Order by internal sales representatives to prevent invoice being created in case of sales returns. These billing blocks need to be updated or deleted in random or on-demand fashion and is time critical activity in Order-to-Cash process. In many organisation this process is still manual where internal sales representatives get billing block change requests in form of Excel or Email attachment. Sales representatives download these attachments and then sales orders are manually updated in the S/4HANA system based on data in the excel files or attachments.
+
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees how to modify or extend standard business processes from SAP S/4HANA. Leveraging SAP Build Process Automation and SAP Work Zone, advanced edition services of SAP Build portfolio to enhance the experience of managing billing block status change in SAP S/4HANA cloud. 
+
+<img width="1145" alt="image" src="https://github.com/SAP-samples/teched2023-AD163/assets/34297037/dc3d166f-cf68-4d08-ab81-09c0a0e3e782">
+
+
+In this scenario: <br>
+- Sales order is created in SAP S/4HANA
+- Billing block is updated in the sales order
+- Billing Block Status Changed event is thrown by SAP S/4HANA
+- SAP Event Mesh is configured to listen and communicate events 
+- Process is triggered to approve the changes in SAP Build Process Automation
+- Sales Order (A2X) API is used to get and patch sales order details in the backend system
+- SAP Work Zone workspace is used to provide centralized access to S/4HANA applications, and workflow inbox applications
+- Finally, sales representative is informed once the sales orders are updated
+- In addition, whole process can be managed and monitored using out-of-the-box visibility.
+    
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+There are no dedicated requirement for this exercise. But in case you want to gain some further knowledge around SAP Build, please feel free to attend these SAP TechEd workshops:
+- Learn how to build a application, automate process and connect with CAP services in [AD272 - SAP Cloud Application Programming Model Meets SAP Build](https://github.com/SAP-samples/teched2023-AD272)
+- Learn how to build a process and integrate with SAP and non-SAP systems [IN264 - Combine SAP Integration Suite and SAP Build Process Automation in HR](https://github.com/SAP-samples/teched2023-IN264)
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
+- [Exercise 1 - Create and Configure Sales Order](exercises/ex1/)
+- [Exercise 2 - Create Process](exercises/ex2/)
+    - [Exercise 2.1 - Add Event Trigger](exercises/ex2#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.2 - Create Approval Sub-Process](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - - [Exercise 2.2.1 - Add API Trigger with Input and Output](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - - [Exercise 2.2.2 - Add Decision to Determine Approver List](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - - [Exercise 2.2.3 - Add Approver Form with Sales Order Items Table](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.3 - Add Condition](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.4 - Add Action to Update Sales Order](exercises/ex2#exercise-22-sub-exercise-2-description)
+    - [Exercise 2.5 - Send Email Notification](exercises/ex2#exercise-22-sub-exercise-2-description)
+- [Exercise 3 - Run Process](exercises/ex3/)
+    - [Exercise 3.1 - Change Billing Block Status in S/4HANA](exercises/ex3#exercise-31-sub-exercise-1-description)
+    - [Exercise 3.2 - Monitor Process](exercises/ex3#exercise-32-sub-exercise-2-description)
+    - [Exercise 3.3 - Approves Sales Order Update from Inbox](exercises/ex3#exercise-33-sub-exercise-3-description)
   
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
