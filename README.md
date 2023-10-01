@@ -1,4 +1,5 @@
-![image](https://github.com/SAP-samples/teched2023-AD163/assets/34297037/63af953e-e217-41d8-8753-bd25de93c7f4)[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD163)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD163)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-AD163)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-AD163)
+
 # AD163 - Extend Your Sales Order Process in SAP S/4HANA with SAP Build
 
 ## Description
