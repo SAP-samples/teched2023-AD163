@@ -50,6 +50,10 @@ There are no dedicated requirement for this exercise. But in case you want to ga
     - [Exercise 3.1 - Change Billing Block Status in S/4HANA](exercises/ex3#exercise-31-sub-exercise-1-description)
     - [Exercise 3.2 - Monitor Process](exercises/ex3#exercise-32-sub-exercise-2-description)
     - [Exercise 3.3 - Approves Sales Order Update from Inbox](exercises/ex3#exercise-33-sub-exercise-3-description)
+- [Exercise 4 - Create a Workspace With Apps, Information, and Processes for Sales Management](exercises/ex4/)
+    - [Exercise 4.1 - Design a Workspace for Sales Management](exercises/ex4#exercise-41-sub-exercise-1-description)
+    - [Exercise 4.2 - Integrate Apps and Cards to your Workspace](exercises/ex4#exercise-42-sub-exercise-2-description)
+    - [Exercise 4.3 - Experience improved Sales collaboration by accessing your Workspace, view data, run apps and Approves Sales Orders from Inbox](exercises/ex4#exercise-43-sub-exercise-3-description)
   
 
 ## Contributing
