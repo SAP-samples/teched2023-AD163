@@ -32,6 +32,26 @@ Follow this tutorial to create and design your Sales Managemetn Workspace:  [Add
 
 ### Integrate S/4HANA Cloud apps to your Workspace
 
+In order to Integrate apps to Work Zone, you first need to configure them in the Content Manager of SAP Build Work Zone. 
+In this subaccount, the apps are already configured for you, and you only need to add them to the UI. 
+
+To add the appd to the UI:
+1. Click the Pencil icon to edit your **Sales Order** workspage
+
+![App design](appDesign.jpg)
+
+
+2. Click the + icon to add a section below the third row
+
+3. Click **Add Widget** on the newly added section and and select **Tiles**
+
+4. Check the Create Sales Order,   and click **Add**
+
+5. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**
+
+6. Click **Publish** to publish your work
+
+
 ### Integrate cards to your Workspace
 
 
