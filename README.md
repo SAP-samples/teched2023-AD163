@@ -46,14 +46,15 @@ There are no dedicated requirement for this exercise. But in case you want to ga
     - [Exercise 2.3 - Add Condition](exercises/ex2#exercise-22-sub-exercise-2-description)
     - [Exercise 2.4 - Add Action to Update Sales Order](exercises/ex2#exercise-22-sub-exercise-2-description)
     - [Exercise 2.5 - Send Email Notification](exercises/ex2#exercise-22-sub-exercise-2-description)
-- [Exercise 3 - Run Process](exercises/ex3/)
-    - [Exercise 3.1 - Change Billing Block Status in S/4HANA](exercises/ex3#exercise-31-sub-exercise-1-description)
-    - [Exercise 3.2 - Monitor Process](exercises/ex3#exercise-32-sub-exercise-2-description)
-    - [Exercise 3.3 - Approves Sales Order Update from Inbox](exercises/ex3#exercise-33-sub-exercise-3-description)
-- [Exercise 4 - Create a Workspace With Apps, Information, and Processes for Sales Management](exercises/ex4/)
-    - [Exercise 4.1 - Design a Workspace for Sales Management](exercises/ex4#exercise-41-sub-exercise-1-description)
-    - [Exercise 4.2 - Integrate Apps and Cards to your Workspace](exercises/ex4#exercise-42-sub-exercise-2-description)
-    - [Exercise 4.3 - Experience improved Sales collaboration by accessing your Workspace, view data, run apps and Approves Sales Orders from Inbox](exercises/ex4#exercise-43-sub-exercise-3-description)
+- [Exercise 3 - Create a Workspace With Apps, Information, and Processes for Sales Management](exercises/3_CreateWorkspace/)
+    - [Exercise 3.1 - Design a Workspace for Sales Management](exercises/3_CreateWorkspace#exercise-41-sub-exercise-1-description)
+    - [Exercise 3.2 - Integrate Apps and Cards to your Workspace](exercises/3_CreateWorkspace#exercise-42-sub-exercise-2-description)
+    - [Exercise 3.3 - Experience improved Sales collaboration by accessing your Workspace, view data, run apps and Approves Sales Orders from Inbox](exercises/3_CreateWorkspace#exercise-43-sub-exercise-3-description)
+- [Exercise 4 - Run Process](exercises/ex3/)
+    - [Exercise 4.1 - Change Billing Block Status in S/4HANA](exercises/ex3#exercise-31-sub-exercise-1-description)
+    - [Exercise 4.2 - Monitor Process](exercises/ex3#exercise-32-sub-exercise-2-description)
+    - [Exercise 4.3 - Approves Sales Order Update from Inbox](exercises/ex3#exercise-33-sub-exercise-3-description)
+  
   
 
 ## Contributing
