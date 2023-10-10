@@ -22,25 +22,25 @@ In this exercise you will learn:
 
 1. In the Lobby, select the three dots next to project **AD163 - XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
-    ![02](./images//001.png)
+  ![02](./images//001.png)
 
 2. In the **Save as New Project** pop-up:
 
-    - Select **Editable version** as **Version**
-    - Replace the XXX in the **Project Name** with your user name
-    - Choose **Save as new**
+  - Select **Editable version** as **Version**
+  - Replace the XXX in the **Project Name** with your user name
+  - Choose **Save as new**
 
-    ![02](./images//002.png)
+  ![02](./images//002.png)
 
-    Your project gets created in the Lobby.
+  Your project gets created in the Lobby.
 
 3. Click on the newly created project.
 
-    ![02](./images//003.png)
+  ![02](./images//003.png)
 
-    In the **Overview** tab of your project, select **Create > Process**.
+  In the **Overview** tab of your project, select **Create > Process**.
  
-    ![02](./images//004.png)
+  ![02](./images//004.png)
 
 4. In the **Create Process pop-up**:
 
@@ -48,13 +48,13 @@ In this exercise you will learn:
   - Enter **Description:** Process to update the billing block based on the Approval
   - Choose **Create**
 
-    ![02](./images//005.png)
+  ![02](./images//005.png)
 
-    The process gets added in the process builder.
+  The process gets added in the process builder.
 
 5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**
 
-    ![02](./images//006.png)
+  ![02](./images//006.png)
 
 6. In the **Create Event Trigger** pop-up:
 
@@ -63,30 +63,30 @@ In this exercise you will learn:
   - Select **Event:** SalesOrder Billing Block Status Changed
   - Choose **Create**
 
-    ![02](./images//007.png)
+  ![02](./images//007.png)
 
 7. The Event Trigger gets created. Choose **OK**.
 
-    ![02](./images//008.png)
+  ![02](./images//008.png)
 
 8. In **General** tab of **Process Details**:
    
-   - Enter **Subject:** Process to approve the removal of billing block and updating the sales order and select the Process Input **SalesOrder**
-   - As **Business Key**, select the Process Input **SalesOrder**
+  - Enter **Subject:** Process to approve the removal of billing block and updating the sales order and select the Process Input **SalesOrder**
+  - As **Business Key**, select the Process Input **SalesOrder**
 
-9. Save your work
+9. Save your work.
 
-    ![02](./images//009.png)
+  ![02](./images//009.png)
 
 ## Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
 
 1. In the Process Builder, select **+ > Controls > Condition**.
    
-    ![02](./images//010.png)
+  ![02](./images//010.png)
 
 2. Drag the Default branch to the End node.
 
-    ![02](./images//011.png)
+  ![02](./images//011.png)
 
 3. Select the **Condition** control and perform the following:
 
@@ -94,7 +94,7 @@ In this exercise you will learn:
   - Change the **Branch Name** to yes.
   - Choose **Open Condition Editor** to define the Condition.
 
-    ![02](./images//012.png)
+  ![02](./images//012.png)
 
 4. In the **Edit Branch Condition**, set the condition:
 
@@ -103,11 +103,11 @@ In this exercise you will learn:
   - Enter the number of the sales order you created in exercise 1
   - Choose **Apply**
 
-    ![02](./images//013.png)
+  ![02](./images//013.png)
 
 5. Save your work.
 
-    ![02](./images//014.png)
+  ![02](./images//014.png)
   
 ### Create Approval Sub-Process <a name="approvalSubProcess"></a>
 
