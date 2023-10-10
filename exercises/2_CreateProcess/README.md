@@ -50,7 +50,7 @@ In this exercise you will learn:
 
     ![02](./images//005.png)
 
-  The process gets added in the process builder.
+    The process gets added in the process builder.
 
 5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**
 
