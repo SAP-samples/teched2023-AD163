@@ -1,3 +1,25 @@
+## Table of Contents
+ - [Overview](#overview)
+ - [Add Event Trigger](#eventTrigger)
+ - [Create Approval Sub-Process](#approvalSubProcess)
+ - [Add Condition](#addCondition)
+ - [Add Action to Update Sales Order](#addCondition)
+ - [Add confirmation and rejection notifications](#addNotifications)
+ - [Summary](#summary)
+
+### Overview <a name="overview"></a>
+
+In this exercise you will learn:
+
+- How to add an event trigger to a process
+- How to create an approval sub-process
+- How to add a condition
+- How to add action to update sales order
+- How to add confirmation and rejection notifications
+
+## Event Trigger <a name="eventTrigger"></a>
+
+
 # Exercise 1 - Exercise 1 Description
 
 In this exercise, we will create...
