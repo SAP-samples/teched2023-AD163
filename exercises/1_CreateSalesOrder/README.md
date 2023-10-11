@@ -13,17 +13,23 @@ After completing these steps you will have a Sales Order number created without 
 2. Search for va01 and click "Create Sales Order - VA01"
    <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
 
-3.	Enter Order Type as “OR” and click on “Create with Reference”..
+3.	Enter Order Type as “OR” and click on “Create with Reference”.
    <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+
+4. In the “Order” tab, enter Order as 3 and click on “Copy”.
+   <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
+
+5. In the “Review Availability Check” page, click “Apply”.
+   <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
+
+6. In “Create Standard Order:Overview” page enter a customer reference text and note that the “Billing Block” is blank.
+   <br>This means there is no billing block on the Sales Order.
+   <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
+
+7. Click “Save” and note down the Sales Order number. We will use this later while designing and executing the end-to-end process.
+   <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
+
+
 
 ## Summary
 
