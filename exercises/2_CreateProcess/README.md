@@ -84,7 +84,7 @@ In this exercise you will learn:
    
   ![02](./images//010.png)
 
-2. Drag the Default branch to the End node.
+2. Connect the outgoing flow of the Default branch to the End activity.
 
   ![02](./images//011.png)
 
