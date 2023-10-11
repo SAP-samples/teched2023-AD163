@@ -37,7 +37,7 @@ There are no dedicated requirement for this exercise. But in case you want to ga
 ## Exercises
 
 - [Exercise 1 - Create and Configure Sales Order](exercises/ex1/)
-- [Exercise 2 - Create Process](exercises/#create-process-)
+- [Exercise 2 - Create Process](exercises/2_CreateProcess/)
     - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#add-event-trigger-to-process-)
     - [Exercise 2.2 - Add Condition to match Sales Order](exercises/2_CreateProcess#add-condition-to-match-sales-order-)
     - [Exercise 2.3 - Add Action to read Sales Order Items](exercises/2_CreateProcess#add-action-to-read-sales-order-items-)
