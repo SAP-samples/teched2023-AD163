@@ -225,7 +225,7 @@ In this exercise you will learn:
 
   The decision editor opens. You sill start configuring the input and output parameters that are needed to add rules to the decision.
 
-1. Choose **Add Input Parameter**:
+5. Choose **Add Input Parameter**:
 
   - Enter **Name:** SalesOrderInput
   - Enter **Description:** Sales order details
