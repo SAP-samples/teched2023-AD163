@@ -1,14 +1,20 @@
-## Table of Contents
- - [Overview](#overview)
- - [Add Event Trigger](#eventTrigger)
- - [Add Condition to match Sales Order](#matchSalesOrderCondition)
- - [Create Approval Sub-Process](#approvalSubProcess)
- - [Add Condition](#addCondition)
- - [Add Action to Update Sales Order](#addCondition)
- - [Add confirmation and rejection notifications](#addNotifications)
- - [Summary](#summary)
+# Create Process
 
-### Overview <a name="overview"></a>
+<!-- description --> In this exercise, you will create a process to 
+
+## Table of Contents
+- [Create Process](#create-process)
+  - [Table of Contents](#table-of-contents)
+  - [Overview ](#overview-)
+    - [Add Event Trigger ](#add-event-trigger-)
+    - [Add Condition to match Sales Order ](#add-condition-to-match-sales-order-)
+    - [Create Approval Sub-Process ](#create-approval-sub-process-)
+- [Exercise 1 - Exercise 1 Description](#exercise-1---exercise-1-description)
+  - [Exercise 1.1 Sub Exercise 1 Description](#exercise-11-sub-exercise-1-description)
+  - [Exercise 1.2 Sub Exercise 2 Description](#exercise-12-sub-exercise-2-description)
+  - [Summary](#summary)
+
+## Overview <a name="overview"></a>
 
 In this exercise you will learn:
 
@@ -18,7 +24,7 @@ In this exercise you will learn:
 - How to add action to update sales order
 - How to add confirmation and rejection notifications
 
-## Add Event Trigger <a name="eventTrigger"></a>
+### Add Event Trigger <a name="eventTrigger"></a>
 
 1. In the Lobby, select the three dots next to project **AD163 - XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
@@ -78,7 +84,7 @@ In this exercise you will learn:
 
   ![02](./images//009.png)
 
-## Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
+### Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
 
 1. In the Process Builder, select **+ > Controls > Condition**.
    
