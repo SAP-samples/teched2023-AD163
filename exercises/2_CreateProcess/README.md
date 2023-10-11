@@ -1,14 +1,20 @@
-# Create Process
+# Create Process <a name="process"></a>
 
-<!-- description --> In this exercise, you will create a process to 
+<!-- description --> In this exercise, you will create a process to update the billing block based on the Approval
 
-## Table of Contents
-- [Create Process](#create-process)
-  - [Table of Contents](#table-of-contents)
+## Table of Contents <a name="tableContents"></a>
+- [Create Process ](#create-process-)
+  - [Table of Contents ](#table-of-contents-)
   - [Overview ](#overview-)
-    - [Add Event Trigger ](#add-event-trigger-)
+    - [Add Event Trigger to Process ](#add-event-trigger-to-process-)
     - [Add Condition to match Sales Order ](#add-condition-to-match-sales-order-)
+    - [Add Action to read Sales Order Items ](#add-action-to-read-sales-order-items-)
     - [Create Approval Sub-Process ](#create-approval-sub-process-)
+      - [Add Decision to Determine Approver List ](#add-decision-to-determine-approver-list-)
+      - [Add Approver Form with Sales Order Items Table ](#add-approver-form-with-sales-order-items-table-)
+  - [Add Condition ](#add-condition-)
+  - [Add Action to Update Sales Order ](#add-action-to-update-sales-order-)
+  - [Add Confirmation and Rejection Notifications ](#add-confirmation-and-rejection-notifications-)
 - [Exercise 1 - Exercise 1 Description](#exercise-1---exercise-1-description)
   - [Exercise 1.1 Sub Exercise 1 Description](#exercise-11-sub-exercise-1-description)
   - [Exercise 1.2 Sub Exercise 2 Description](#exercise-12-sub-exercise-2-description)
@@ -24,7 +30,7 @@ In this exercise you will learn:
 - How to add action to update sales order
 - How to add confirmation and rejection notifications
 
-### Add Event Trigger <a name="eventTrigger"></a>
+### Add Event Trigger to Process <a name="eventTrigger"></a>
 
 1. In the Lobby, select the three dots next to project **AD163 - XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
@@ -114,8 +120,67 @@ In this exercise you will learn:
 5. Save your work.
 
   ![02](./images//014.png)
+
+
+### Add Action to read Sales Order Items <a name="actionReadSalesOrderItems"></a>
+
+1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** condition, then choose **Actions > Browse library**.
+   
+  ![02](./images//015.png)
+
+2. In the **Browse library** pop-up, select the **Reads all items of a sales order** action from **Project: Sales Order** and choose **Add**.
+
+  ![02](./images//016.png)
+
+3. In the **General** section of the Action:
+
+  - Change the **Step Name** to Reads Sales Order Items
+  - Select the **Destination variable**: S4HANADestination
+
+  ![02](./images//017.png)
+
+4. In the **Inputs** section of the Action, select the **SalesOrder** Process Input.
+
+5. Choose **Save**.
+
+  ![02](./images//018.png)
+
   
 ### Create Approval Sub-Process <a name="approvalSubProcess"></a>
+
+1. In the Process Builder, select the **+** next to the **Reads Sales Order Items** action and choose **Subprocesses > + New Process**.
+
+  ![02](./images//019.png)
+
+2. In The **Create Process** pop-up:
+   
+   - Enter **Name:** Approve Billing Block Removal
+   - Enter **Description:** Process to modularize the approval process
+   - Choose **Create**
+
+  ![02](./images//020.png)
+
+3. In the **General** section of the SubProcess, select **Edit Process**.
+
+  ![02](./images//021.png)
+
+  The Process Builder will open.
+
+4. 
+
+
+#### Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
+
+#### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
+
+## Add Condition <a name="condition"></a>
+
+## Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
+
+## Add Confirmation and Rejection Notifications <a name="confirmationREjectionNOtifications"></a>
+
+
+
 
 
 
