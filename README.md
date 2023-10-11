@@ -38,7 +38,7 @@ There are no dedicated requirement for this exercise. But in case you want to ga
 
 - [Exercise 1 - Create and Configure Sales Order](exercises/ex1/)
 - [Exercise 2 - Create Process](exercises/2_CreateProcess/)
-    - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#add-event-trigger-to-process-)
     - [Exercise 2.2 - Add Condition to match Sales Order](exercises/2_CreateProcess#exercise-22-sub-exercise-1-description)
     - [Exercise 2.3 - Add Action to read Sales Order Items](exercises/2_CreateProcess#exercise-23-sub-exercise-1-description)
     - [Exercise 2.4 - Create Approval Sub-Process](exercises/2_CreateProcess#exercise-24-sub-exercise-2-description)
