@@ -64,3 +64,8 @@ Follow [this tutorial](https://developers.sap.com/tutorials/workzone-build-2-wor
   ![Work Zone](/exercises/3_CreateWorkspace/images/1_create_new_site.png)
 
   2. Enter JobCore<id> as the site name and click Create. <id> is a unique id you should use to identify your site.
+
+## Summary
+
+Now that you have created the created and desinged your Workspace,
+Continue to - [Exercise 4 - Run Process](../4_RunProcess/README.md)
