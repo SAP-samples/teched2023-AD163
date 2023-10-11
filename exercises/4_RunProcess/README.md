@@ -2,7 +2,7 @@
 
 In this exercise, we will create...
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Exercise 2.1 Change Billing Block Status in S/4HANA
 
 After completing these steps you will have created...
 
@@ -16,7 +16,7 @@ response->set_text( |Hello ABAP World! | ).
 
 
 
-## Exercise 2.2 Sub Exercise 2 Description
+## Exercise 2.2 Monitor Process
 
 After completing these steps you will have...
 
@@ -34,6 +34,16 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 
 2.	Click here.
 <br>![](/exercises/ex2/images/02_02_0010.png)
+## Exercise 2.3 Approves Sales Order Update from Inbox
+After completing these steps you will have created...
+
+1. Click here.
+<br>![](/exercises/ex2/images/02_01_0010.png)
+
+2.	Insert this line of code.
+```abap
+response->set_text( |Hello ABAP World! | ). 
+```
 
 ## Summary
 
