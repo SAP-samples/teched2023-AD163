@@ -25,6 +25,7 @@
 In this exercise you will learn:
 
 - How to add an event trigger to a process
+- How to add action to read sales order items
 - How to create an approval sub-process
 - How to add a condition
 - How to add action to update sales order
@@ -166,10 +167,9 @@ In this exercise you will learn:
 
   The Process Builder will open.
 
-4. 
-
-
 #### Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
+
+
 
 #### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
 
