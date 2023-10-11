@@ -67,5 +67,5 @@ Follow [this tutorial](https://developers.sap.com/tutorials/workzone-build-2-wor
 
 ## Summary
 
-Now that you have created the created and desinged your Workspace,
-Continue to - [Exercise 4 - Run Process](../4_RunProcess/README.md)
+Now that you have created the created and designed your Workspace,
+<br>Continue to - [Exercise 4 - Run Process](../4_RunProcess/README.md)
