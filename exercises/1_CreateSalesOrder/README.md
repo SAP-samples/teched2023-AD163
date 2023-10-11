@@ -11,7 +11,7 @@ After completing these steps you will have a Sales Order number created without 
   <br>Username / Password: Provided to you (Example : AD-***@education.cloud.sap , ******)
 
 2. Search for va01 and click "Create Sales Order - VA01"
-   <br>![](/exercises/1_CreateSalesOrder/images/00_00_0010.png)
+   <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
 
 3.	Insert this code.
 4.	<br>![](/exercises/ex0/images/00_00_0010.png)
