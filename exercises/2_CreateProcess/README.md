@@ -12,9 +12,9 @@
     - [Create Approval Sub-Process ](#create-approval-sub-process-)
       - [Add Decision to Determine Approver List ](#add-decision-to-determine-approver-list-)
       - [Add Approver Form with Sales Order Items Table ](#add-approver-form-with-sales-order-items-table-)
-  - [Add Condition ](#add-condition-)
-  - [Add Action to Update Sales Order ](#add-action-to-update-sales-order-)
-  - [Add Confirmation and Rejection Notifications ](#add-confirmation-and-rejection-notifications-)
+    - [Add Condition ](#add-condition-)
+    - [Add Action to Update Sales Order ](#add-action-to-update-sales-order-)
+    - [Add Confirmation and Rejection Notifications ](#add-confirmation-and-rejection-notifications-)
 - [Exercise 1 - Exercise 1 Description](#exercise-1---exercise-1-description)
   - [Exercise 1.1 Sub Exercise 1 Description](#exercise-11-sub-exercise-1-description)
   - [Exercise 1.2 Sub Exercise 2 Description](#exercise-12-sub-exercise-2-description)
@@ -173,11 +173,11 @@ In this exercise you will learn:
 
 #### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
 
-## Add Condition <a name="condition"></a>
+### Add Condition <a name="condition"></a>
 
-## Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
+### Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
 
-## Add Confirmation and Rejection Notifications <a name="confirmationREjectionNOtifications"></a>
+### Add Confirmation and Rejection Notifications <a name="confirmationREjectionNOtifications"></a>
 
 
 
