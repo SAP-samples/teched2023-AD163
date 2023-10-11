@@ -155,9 +155,9 @@ In this exercise you will learn:
 
 2. In The **Create Process** pop-up:
    
-   - Enter **Name:** Approve Billing Block Removal
-   - Enter **Description:** Process to modularize the approval process
-   - Choose **Create**
+  - Enter **Name:** Approve Billing Block Removal
+  - Enter **Description:** Process to modularize the approval process
+  - Choose **Create**
 
   ![02](./images//020.png)
 
@@ -165,10 +165,142 @@ In this exercise you will learn:
 
   ![02](./images//021.png)
 
-  The Process Builder will open.
+  The SubProcess Builder will open.
 
+4. In the **General** section:
+
+  - Change the **Process name** to Modularize Approval Process
+  - Change the **Subject** to SubProcess to approve changes to billing block in sales order
+
+  ![02](./images//021a.png)
+
+5. In the **Variables** section, under **Process Inputs**, choose **Configure**.
+
+  ![02](./images//021b.png)
+
+6. In the **Configure Process Inputs** pop-up:
+
+  - Choose **Add Input**
+  - Enter **Name:** SalesOrderInfo
+  - Select **Type:** Sales Order
+  - Choose **Apply**
+
+  ![02](./images//021c.png)
+
+  You have configured the Process Inputs. Now you will configure the Process Outputs.
+
+7. Under **Process Outputs**, choose **Configure**.
+
+  ![02](./images//021d.png)
+
+8. In the **Configure Process Outputs** pop-up, you will add two inputs:
+
+  - Choose **Add Output**
+  - Enter **Name:** ApproverComments, select string as **Type** and check Required
+  - Choose **Add Output** again
+  - Enter **Name:** isApproved, select Boolean as **Type** and check Required
+  - Choose **Apply**
+
+  ![02](./images//021e.png)
+
+9. Save your work.
+    
 #### Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
 
+1. Select the **+** next to the Trigger, and choose **Decision > + New Decision**
+
+  ![02](./images//022.png)
+
+3. In the **Create Decision** pop-up:
+
+  - Enter **Name:** Determine Approver
+  - Enter **Description:** Determine approver based on sales order distribution channel and sold to party
+  - Choose **Create**
+
+  ![02](./images//023.png)
+
+4. Choose **Save** and then **Edit Decision**.
+
+  ![02](./images//024.png)
+
+  The decision editor opens. You sill start configuring the input and output parameters that are needed to add rules to the decision.
+
+1. Choose **Add Input Parameter**:
+
+  - Enter **Name:** SalesOrderInput
+  - Enter **Description:** Sales order details
+  - Select **Type:** Sales Order
+
+6. Choose **Add Output Parameter**:
+
+  - Enter **Name:** ApproverOutput
+  - Enter **Description:** Approver details
+  - Select **Type:** Approver
+
+7. Select the **Rules** tab.
+
+  ![02](./images//025.png)
+
+8. Choose **Add Rule**.
+
+  ![02](./images//026.png)
+
+9. In the **Create Rule** window, you will enter the Rule Details:
+
+  - Select **Decision Table**
+  - Enter **Rule Name:** Get Approver
+  - Enter **Rule Description:** Rule to determine approver based on sales order information
+  - Select **Hit Policy**: All Match
+  - Choose **Next Step**
+
+  ![02](./images//027.png)
+
+10. Now you will configure the Conditions:
+
+  - Under **Vocabulary > Input/Output**, select **SalesOrderInp > SoldToParty**
+  - Select as **Operator:** =
+  - Choose **Next Step**
+
+  ![02](./images//028.png)
+
+11. To configure the Results:
+
+  - Under **Vocabulary**, select **ApproverOutput > Email**
+  - Choose **Next Step**
+  
+  ![02](./images//029.png)
+
+12. You may review your Decision Table and choose **Create**.
+
+  ![02](./images//030.png)
+
+13. Configure your Decision Table:
+
+  - Under **SoldToParty =**, enter '17100001'
+  - Under **Email**, enter your user such as 'AD163_046'
+  - Choose **Save**
+
+  ![02](./images//031.png)
+
+  Now you need to map the decision to the process content.
+
+14. Navigate back to the **Modularize Approval Process**, select the **Decision** and choose **Inputs** tab
+
+  ![02](./images//032.png)
+
+15. Under **SalesOrderInp**, map **DistributionChannel** to **Process Inputs > SalesOrderInfo > DistributionChannel**.
+    
+16. Under **SalesOrderItemDetails**, bind list to **Process Inputs > SalesOrderInfo > list SalesOrderItemDetails**.
+
+  ![02](./images//033.png)
+
+17. Under **SalesOrderInp**, map **SalesOrderNumber** to **Process Inputs > SalesOrderInfo > SalesOrderNumber**.
+    
+18. Under **SalesOrderInp**, map **SoldToParty** to **Process Inputs > SalesOrderInfo > SoldToParty**.
+
+19. Save your work.
+
+  ![02](./images//034.png)
 
 
 #### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
