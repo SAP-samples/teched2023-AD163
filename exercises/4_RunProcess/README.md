@@ -1,6 +1,6 @@
-# Exercise 2 - Exercise 2 Description
+# Test end to end process
 
-In this exercise, we will create...
+In this exercise, we will update the Sales Order that was created and add a billing reason to block the Sales Order for billing. The required event is dispatched 
 
 ## Exercise 2.1 Change Billing Block Status in S/4HANA
 
