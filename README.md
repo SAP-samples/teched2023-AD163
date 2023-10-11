@@ -38,8 +38,8 @@ There are no dedicated requirement for this exercise. But in case you want to ga
 
 - [Exercise 1 - Create and Configure Sales Order](exercises/ex1/)
 - [Exercise 2 - Create Process](exercises/ex2/)
-    - [Exercise 2.1 - Add Event Trigger to Process](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Add Condition to match Sales Order](exercises/ex2#exercise-22-sub-exercise-1-description)
+    - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#exercise-21-sub-exercise-1-description)
+    - [Exercise 2.2 - Add Condition to match Sales Order](exercises/2_CreateProcess#exercise-22-sub-exercise-1-description)
     - [Exercise 2.3 - Add Action to read Sales Order Items](exercises/ex2#exercise-23-sub-exercise-1-description)
     - [Exercise 2.4 - Create Approval Sub-Process](exercises/ex2#exercise-24-sub-exercise-2-description)
       - [Exercise 2.4.2 - Add Decision to Determine Approver List](exercises/ex2#exercise-24-sub-exercise-2-description)
