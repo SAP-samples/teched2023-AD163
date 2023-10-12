@@ -13,8 +13,9 @@
       - [Add Decision to Determine Approver List ](#add-decision-to-determine-approver-list-)
       - [Add Approver Form with Sales Order Items Table ](#add-approver-form-with-sales-order-items-table-)
     - [Add Condition ](#add-condition-)
+    - [Add Action to read Sales Order Header ](#add-action-to-read-sales-order-header-)
     - [Add Action to Update Sales Order ](#add-action-to-update-sales-order-)
-    - [Add Confirmation and Rejection Notifications ](#add-confirmation-and-rejection-notifications-)
+    - [Add Approval and Rejection Notifications ](#add-approval-and-rejection-notifications-)
 - [Exercise 1 - Exercise 1 Description](#exercise-1---exercise-1-description)
   - [Exercise 1.1 Sub Exercise 1 Description](#exercise-11-sub-exercise-1-description)
   - [Exercise 1.2 Sub Exercise 2 Description](#exercise-12-sub-exercise-2-description)
@@ -376,14 +377,167 @@ In this exercise you will learn:
 
   ![02](./images//045.png)
 
+  Now that you you have created your Approval SubProcess you need to configure the inputs of the SubProcess with the Process Content.
 
+14. Navigate back to the Billing Block Removal Process, select the Approval Billing Block Removal SubProcess and go to Inputs Tab.
+
+  - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
+  - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
+  - Map **SalesOrderItemDetails** to **Reads Sales Order Items > result > Collection of A_SalesOrderItemType > list results**
+  
+  ![02](./images//046.png)
+
+  - Map **SalesOrderInfo > SalesOrderNumber** to **Process Inputs > data > SalesOrder**
+  - Map **SalesOrderInfo > SoldToParty** to **Process Inputs > data > SoldToParty**
+  - Choose **Save**
+
+  ![02](./images//047.png)
 
 
 ### Add Condition <a name="condition"></a>
 
+1. In the Process Builder, select **+** next to the SubProcess and choose **Controls > Condition**.
+
+  ![02](./images//048.png)
+
+2. In the Condition panel on the right:
+
+  - Change the **Step Name:** is approved?
+  - Change the **Branch Name:** to yes
+  - Choose **Save** and **Open Condition Editor** to define the Condition
+
+  ![02](./images//049.png)
+
+3. In the **Edit Branch Condition** window:
+
+  - Select Process Content **isApproved** from **Approve Billing Block Removal**
+  - Select true
+  - Choose **Apply**
+
+  The Condition reads: if value of isApproved is equal to true.
+
+  ![02](./images//050.png)
+
+4. Connect the outgoing Default branch of the Condition to the End activity.
+
+5. Choose **Save**.
+   
+   ![02](./images//050a.png)  
+
+
+### Add Action to read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
+
+1. In the Process Builder, select **+** next to the yes branch of the Condition, then **Actions > Browse library**.
+
+  ![02](./images//051.png)
+
+2. In the **Browse library** pop-up, select **Reads the header of a sales order** action from **Project: Sales Order** and choose **Add**.
+   
+  ![02](./images//052.png)
+
+3. In the **General** section of the Action:
+
+  - Change the **Step Name:** Get ETAG for PATCH
+  - Select the **Destination variable:** S4HANADestination
+
+  ![02](./images//053.png)
+
+4. Go to the **inputs** section of the Action and map **SalesOrder** to **Process Inputs > data > salesOrder**.
+
+5. Choose **Save**.
+
+  ![02](./images//054.png)
+
+
 ### Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
 
-### Add Confirmation and Rejection Notifications <a name="confirmationREjectionNOtifications"></a>
+1. In the Process Builder, select **+** next to the Action and choose **Actions > Browse library**.
+   
+  ![02](./images//055.png)
+
+2. In the **Browse library** pop-up, select **Updates a sales order** action from **Project: Sales Order** and choose **Add**.
+   
+  ![02](./images//056.png)
+
+3. In the **General** section of the Action:
+
+  - Change the **Step Name:** Updates a sales order
+  - Select the **Destination variable:** S4HANADestination
+
+  ![02](./images//057.png)
+
+4. Go to the **Inputs** section of the Action and map **ifMatch** to **Get ETAG for Patch > result > Sales Order Header > metadata > etag**.
+
+  ![02](./images//058.png)
+
+5. Map **SalesOrder** to **Process Inputs > data > SalesOrder**
+
+6. Choose **Save**.
+
+  ![02](./images//059.png)
+
+
+### Add Approval and Rejection Notifications <a name="approvalREjectionNotifications"></a>
+
+1. In the Process Builder, select **+** next to the **Updates a sales order** Action and choose **Forms > Approval Notification**.
+
+  ![02](./images//060.png)
+
+2. In the **General** section of the Form:
+
+  - Enter **Subject:** as **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Under **Recipients > Users**, enter your user such as **AD163_046**
+
+  ![02](./images//061.png)
+
+3. Go to the **Inputs** section of the Form:
+
+  - Map **Distribution Channel** to **Process Inputs > data > DistributionChannel**
+  - Map **Sales Order Number** to **Process Inputs > data > SalesOrder**
+  - Map **Sold-To-Party** to **Process Inputs > data > SoldToParty**
+  - Choose **Save**
+
+  ![02](./images//062.png)
+
+  You will duplicate the **Approval Notification** Form in order to create your **Rejection Notification** Form.
+
+4. Navigate to the **Overview** tab.
+
+5. Select the three dots next to the **Approval Notification** then select **Duplicate**.
+   
+  ![02](./images//063.png)
+
+6. In the **Duplicate Artifact** pop-up, enter as **Name:** Rejection Notification and choose **Duplicate**.
+
+  ![02](./images//064.png)
+
+  The Form Builder opens. Now, you will update your Rejection Notification to reflect rejection.
+
+7. Change the **Headline** to: Billing Block Removal Rejected.
+   
+8. Drag and drop a **Paragraph** field after the Headline field and enter as **New Paragraph:** The request to remove the billing block on the sales order has been rejected. You can find the reason of rejection and the details of your the sales order below:
+    
+9. Drag ad drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection. 
+    
+10. Check Read Only as Configuration.
+
+  ![02](./images//065.png)
+
+11. Now drag and drop a **Paragraph** field after the **Text Area** and enter as **New Paragraph:** Your Sales Order Details:
+    
+12. Drag and drop a **Text** field after Distribution Channel. Enter as **New Text:** Billing Block Status.
+    
+13. Check Read Only as Configuration.
+    
+14. Save your Form.
+
+  ![02](./images//066.png)
+
+
+
+
+
+
 
 
 
