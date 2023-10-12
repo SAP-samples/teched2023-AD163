@@ -16,6 +16,7 @@
   - [Exercise 2.6 - Add Action to read Sales Order Header ](#exercise-26---add-action-to-read-sales-order-header-)
   - [Exercise 2.7 - Add Action to Update Sales Order ](#exercise-27---add-action-to-update-sales-order-)
   - [Exercise 2.8 - Add Approval and Rejection Notifications ](#exercise-28---add-approval-and-rejection-notifications-)
+  - [Exercise 2.9 - Release and deploy the Process ](#exercise-29---release-and-deploy-the-process-)
   - [Summary](#summary)
 
 ## Overview <a name="overview"></a>
@@ -474,7 +475,7 @@ In this exercise you will learn:
   ![02](./images//059.png)
 
 
-## Exercise 2.8 - Add Approval and Rejection Notifications <a name="approvalREjectionNotifications"></a>
+## Exercise 2.8 - Add Approval and Rejection Notifications <a name="approvalRejectionNotifications"></a>
 
 1. In the Process Builder, select **+** next to the **Updates a sales order** Action and choose **Forms > Approval Notification**.
 
@@ -552,6 +553,39 @@ In this exercise you will learn:
 
   ![02](./images//069.png)
 
+## Exercise 2.9 - Release and deploy the Process <a name="releaseDeployProcess"></a>
+
+Once your project is free of errors, you may release and deploy it.
+
+1. Choose the **Release** button on the top right.
+
+  ![02](./images//070.png)
+   
+2. In the **Release Project** pop-up, choose **Release**.
+
+  ![02](./images//071.png)
+
+ You will see a change of status indicating that your project is released.
+ 
+ 3. Choose the **Deploy** button to deploy the project.
+
+  ![02](./images//072.png)
+
+4. You may now run the deployment. Choose **Next**.
+
+  ![02](./images//073.png)
+
+5. Select as **Destination** AD163-S4HANA and choose **Next**.
+
+  ![02](./images//074.png)
+
+6. Choose **Deploy**.
+
+  ![02](./images//075.png)
+
+  Your project is now deployed.
+
+    ![02](./images//076.png)
 
 ## Summary
 
