@@ -37,15 +37,16 @@ After completing these steps you will have...
 <br>![](/exercises/4_RunProcess/images/Monitor02.png)
 
 4.	All the processes are listed in the logs. Search for your project / definition using the appropriate filters:
-<br>![](/exercises/ex2/images/Monitor03.png)
+<br>![](/exercises/ex2/4_RunProcess/Monitor03.png)
 
 5.	Click on the instance with Running status to view the details of the logs
-<br>![](/exercises/ex2/images/Monitor04.png)
+<br>![](/exercises/ex2/4_RunProcess/Monitor04.png)
 
 6.	Check that event trigger has started the process from the Context section
-<br>![](/exercises/ex2/images/Monitor05.png)
+<br>![](/exercises/ex2/4_RunProcess/Monitor05.png)
 
 7.	Check the rest of the steps in the Logs section
+   
 
 
 ## Exercise 2.3 Approves Sales Order Update from Inbox
