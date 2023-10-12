@@ -75,11 +75,14 @@ To add the `cards` to the UI:
   4. Check the Create Sales Order,   and click **Add**.
   ![App design](AddCards_4.png)
 
-  6. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**.
+  5. Click the cogwheel of this newly added section 
 ![App design](AddCards_5.png)
 
-  8. Click **Publish** to publish your work.
+  6. Set title **Apps**, and Top padding **30**. and click **Save**
 ![App design](EditWorkpage_6.png)
+  
+  7. Click **Publish** to publish your work.
+![App design](EditWorkpage_7.png)
 
 
 
