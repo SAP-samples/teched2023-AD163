@@ -305,6 +305,80 @@ In this exercise you will learn:
 
 #### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
 
+1. In the SubProcess Builder, select the **+** next to the Decision and choose **Approvals > Approval Form**.
+
+  ![02](./images//035.png)
+
+2. Choose **Save** and then **Edit Form**.
+
+  ![02](./images//036.png)
+
+  The Form Builder opens. You will add a Sales Order Items Table.
+
+3. Select a Table field and drag and drop it between **Billing Block Status (C=Blocked)** field and the checkbox.
+
+  ![02](./images//037.png)
+
+4. Perform the following actions:
+
+  - Under **Items Details > Configuration**, check Read Only
+  - Enter **New Table:** Items Details
+  - Select the **+**
+  - Select **Text** to add a new Text to the table.
+
+  ![02](./images//038.png)
+
+5. Enter **New Text:** Item and add a new Text.
+
+  ![02](./images//039.png)
+
+6. Enter **New Text:** Material and repeat step 5 to add two other Texts: ItemDescription and RequestedQuantity.
+   
+7. Save your form.
+
+  ![02](./images//040.png)
+
+8. Navigate back to the Modularize Approval Process.
+
+7. Select the Approval Form. In the **General** section:
+
+  - Enter **Subject:** Review and approve changes in billing block for sales order:
+  - Under **Recipients**, map **Users** to **Determine Approver > ApproverOutput > Email**
+
+  ![02](./images//041.png)
+
+8. Go to the **Inputs** tab and map the inputs with the Process Content:
+
+  - BillingBlockStatus to **Process inputs > SalesOrderInfo > BillingBlockStatus**
+  - Distribution Channel to **Process inputs > SalesOrderInfo > DistributionChannel**
+  - **Items Details > list - SalesOrderItemDetails** to **Process Inputs > list SalesOrderItemDetails**
+  - Sales Order Number to **Process inputs > SalesOrderInfo > SalesOrderNumber**
+  - Sold-To-Party to **Process inputs > SalesOrderInfo > SoldToParty**
+  - Choose **Save**
+
+  ![02](./images//042.png)
+
+9. Connect the Reject node of the Approval Form to the End activity.
+    
+  ![02](./images//043.png)
+
+  You will map the Process Outputs to the Process Content of the Approval Form.
+
+10. Select the End activity.
+
+  ![02](./images//044.png)
+
+11. Map **Process Outputs > ApproverComments** to **Approval Form > Approver's Comment**
+    
+12. Map **Process Outputs > isApproved** to **Approval Form > Select the checkbox...**
+
+13. Save your work.
+
+  ![02](./images//045.png)
+
+
+
+
 ### Add Condition <a name="condition"></a>
 
 ### Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
