@@ -41,7 +41,7 @@ There are no dedicated requirement for this exercise. But in case you want to ga
     - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#exercise-21---add-event-trigger-to-process-)
     - [Exercise 2.2 - Add Condition to match Sales Order](exercises/2_CreateProcess#exercise-22---add-condition-to-match-sales-order-)
     - [Exercise 2.3 - Add Action to read Sales Order Items](exercises/2_CreateProcess#exercise-23---add-action-to-read-sales-order-items-)
-    - [Exercise 2.4 - Create Approval Sub-Process](exercises/2_CreateProcess#exercise-24--create-approval-sub-process-)
+    - [Exercise 2.4 - Create Approval Sub-Process](exercises/2_CreateProcess#exercise-24---create-approval-sub-process-)
       - [Exercise 2.4.1 - Add Decision to Determine Approver List](exercises/2_CreateProcess#exercise-241---add-decision-to-determine-approver-list-)
       - [Exercise 2.4.2 - Add Approver Form with Sales Order Items Table](exercises/2_CreateProcess#exercise-242---add-approver-form-with-sales-order-items-table-)
     - [Exercise 2.5 - Add Condition](exercises/2_CreateProcess#exercise-25---add-condition-)
