@@ -56,18 +56,35 @@ To add the `apps` to the UI:
 
 ### Integrate cards to your Workspace
 
+In order to Integrate custom cards to Work Zone, you first need to develop them using SAP Business Applicaiton Studio, deploy them to SAP Build Work. 
+In this sub account, the cards are already created and deployed for you, and you only need to add them to the UI.
 
-![Work Zone](/exercises/3_CreateWorkspace/images/0_std_open.jpg)
+To add the `cards` to the UI:
+  1. Click the Pencil icon to edit your **Sales Order** workspace.
+
+  ![App design](EditWorkpage_1.png)
 
 
-## Create and design your Workspace
-Follow [this tutorial](https://developers.sap.com/tutorials/workzone-build-2-workspace.html) to create and design your workspace.
+  2. Click the **+** icon to add a section below the apps section.
+  ![App design](AddCards_2.png)
 
-  1. Click **Create Site**.
+  3. Click **Add Widget** on the newly added section and and select **Tiles**.
 
-  ![Work Zone](/exercises/3_CreateWorkspace/images/1_create_new_site.png)
+  ![App design](AddCards_3.png)
+  
+  4. Check the Create Sales Order,   and click **Add**.
+  ![App design](AddCards_4.png)
 
-  2. Enter JobCore<id> as the site name and click Create. <id> is a unique id you should use to identify your site.
+  6. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**.
+![App design](AddCards_5.png)
+
+  8. Click **Publish** to publish your work.
+![App design](EditWorkpage_6.png)
+
+
+
+
+
 
 ## Summary
 
