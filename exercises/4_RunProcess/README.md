@@ -22,35 +22,40 @@ After completing these steps you will have created...
 5. Check the confirmation that the Sales Order was saved.
 <br>![](/exercises/4_RunProcess/images/ConfirmUpdateSO.png)
 
+Note: Now the event “Billing block status changed” will be triggered from SAP S/4HANA which will trigger the process that is created in SAP Build Process Automation.
 
 ## Exercise 2.2 Monitor Process
 
 After completing these steps you will have...
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+1.	Login to the SAP Build Lobby 
+<br>URL : https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
+<br>Username / Password : Provided to you (Example : AD-***@education.cloud.sap , ******)
+<br>![](/exercises/4_RunProcess/images/Monitor01.png)
 
-```
+3.	Click on “Monitor” and then click on “Process Workflow and Instances”.
+<br>![](/exercises/4_RunProcess/images/Monitor02.png)
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+4.	All the processes are listed in the logs. Search for your project / definition using the appropriate filters:
+<br>![](/exercises/ex2/images/Monitor03.png)
+
+5.	Click on the instance with Running status to view the details of the logs
+<br>![](/exercises/ex2/images/Monitor04.png)
+
+6.	Check that event trigger has started the process from the Context section
+<br>![](/exercises/ex2/images/Monitor05.png)
+
+7.	Check the rest of the steps in the Logs section
+
+
 ## Exercise 2.3 Approves Sales Order Update from Inbox
 After completing these steps you will have created...
 
-1. Click here.
+1. Click on “My Inbox” icon on the top right to approve the  task.
 <br>![](/exercises/ex2/images/02_01_0010.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+2.	Submit and check the status in S/4HANA.
+
 
 ## Summary
 
