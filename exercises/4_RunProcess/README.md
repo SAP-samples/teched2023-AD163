@@ -6,14 +6,21 @@ In this exercise, we will update the Sales Order that was created and add a bill
 
 After completing these steps you will have created...
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+1. Logon to the S/4HANA system
+<br>S/4HANA Cloud URL: https://my407161.s4hana.cloud.sap/ui
+<br>Username / Password: Provided to you (Example : AD-***@education.cloud.sap , ******)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+2.	Search for va02 and click "Change Sales Order - VA02"
+<br>![](/exercises/ex2/images/VA02.png)
 
+3. Enter Order as the Sales Order number that was created in “Create Sales Order” exercise and click on “Continue”.
+<br>![](/exercises/ex2/images/EnterSOToEdit.png)
+
+4. In the “Sales” tab, enter Billing Block as any value from the drop down and “Save”. Note: The sales order is blocked only when any of the reasons are selected.
+<br>![](/exercises/ex2/images/UpdateBillingBlock.png)
+
+5. Check the confirmation that the Sales Order was saved.
+<br>![](/exercises/ex2/images/ConfirmUpdateSO.png)
 
 
 ## Exercise 2.2 Monitor Process
