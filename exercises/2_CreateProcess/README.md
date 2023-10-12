@@ -1,24 +1,21 @@
-# Create Process <a name="process"></a>
+# Exercise 2 - Create Process <a name="process"></a>
 
 <!-- description --> In this exercise, you will create a process to update the billing block based on the Approval
 
 ## Table of Contents <a name="tableContents"></a>
-- [Create Process ](#create-process-)
+- [Exercise 2 - Create Process ](#exercise-2---create-process-)
   - [Table of Contents ](#table-of-contents-)
   - [Overview ](#overview-)
-    - [Add Event Trigger to Process ](#add-event-trigger-to-process-)
-    - [Add Condition to match Sales Order ](#add-condition-to-match-sales-order-)
-    - [Add Action to read Sales Order Items ](#add-action-to-read-sales-order-items-)
-    - [Create Approval Sub-Process ](#create-approval-sub-process-)
-      - [Add Decision to Determine Approver List ](#add-decision-to-determine-approver-list-)
-      - [Add Approver Form with Sales Order Items Table ](#add-approver-form-with-sales-order-items-table-)
-    - [Add Condition ](#add-condition-)
-    - [Add Action to read Sales Order Header ](#add-action-to-read-sales-order-header-)
-    - [Add Action to Update Sales Order ](#add-action-to-update-sales-order-)
-    - [Add Approval and Rejection Notifications ](#add-approval-and-rejection-notifications-)
-- [Exercise 1 - Exercise 1 Description](#exercise-1---exercise-1-description)
-  - [Exercise 1.1 Sub Exercise 1 Description](#exercise-11-sub-exercise-1-description)
-  - [Exercise 1.2 Sub Exercise 2 Description](#exercise-12-sub-exercise-2-description)
+  - [Exercise 2.1 - Add Event Trigger to Process ](#exercise-21---add-event-trigger-to-process-)
+  - [Exercise 2.2 -Add Condition to match Sales Order ](#exercise-22--add-condition-to-match-sales-order-)
+  - [Exercise 2.3 -Add Action to read Sales Order Items ](#exercise-23--add-action-to-read-sales-order-items-)
+  - [Exercise 2.4 -Create Approval Sub-Process ](#exercise-24--create-approval-sub-process-)
+    - [Exercise 2.4.1 - Add Decision to Determine Approver List ](#exercise-241---add-decision-to-determine-approver-list-)
+    - [Exercise 2.4.2 -Add Approver Form with Sales Order Items Table ](#exercise-242--add-approver-form-with-sales-order-items-table-)
+  - [Exercise 2.5 - Add Condition ](#exercise-25---add-condition-)
+  - [Exercise 2.6 - Add Action to read Sales Order Header ](#exercise-26---add-action-to-read-sales-order-header-)
+  - [Exercise 2.6 - Add Action to Update Sales Order ](#exercise-26---add-action-to-update-sales-order-)
+  - [Exercise 2.7 - Add Approval and Rejection Notifications ](#exercise-27---add-approval-and-rejection-notifications-)
   - [Summary](#summary)
 
 ## Overview <a name="overview"></a>
@@ -32,7 +29,7 @@ In this exercise you will learn:
 - How to add action to update sales order
 - How to add confirmation and rejection notifications
 
-### Add Event Trigger to Process <a name="eventTrigger"></a>
+## Exercise 2.1 - Add Event Trigger to Process <a name="eventTrigger"></a>
 
 1. In the Lobby, select the three dots next to project **AD163 - XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
@@ -92,7 +89,7 @@ In this exercise you will learn:
 
   ![02](./images//009.png)
 
-### Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
+## Exercise 2.2 -Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
 
 1. In the Process Builder, select **+ > Controls > Condition**.
    
@@ -124,7 +121,7 @@ In this exercise you will learn:
   ![02](./images//014.png)
 
 
-### Add Action to read Sales Order Items <a name="actionReadSalesOrderItems"></a>
+## Exercise 2.3 -Add Action to read Sales Order Items <a name="actionReadSalesOrderItems"></a>
 
 1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** condition, then choose **Actions > Browse library**.
    
@@ -148,7 +145,7 @@ In this exercise you will learn:
   ![02](./images//018.png)
 
   
-### Create Approval Sub-Process <a name="approvalSubProcess"></a>
+## Exercise 2.4 -Create Approval Sub-Process <a name="approvalSubProcess"></a>
 
 1. In the Process Builder, select the **+** next to the **Reads Sales Order Items** action and choose **Subprocesses > + New Process**.
 
@@ -206,7 +203,7 @@ In this exercise you will learn:
 
 9. Save your work.
     
-#### Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
+### Exercise 2.4.1 - Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
 
 1. Select the **+** next to the Trigger, and choose **Decision > + New Decision**
 
@@ -304,7 +301,7 @@ In this exercise you will learn:
   ![02](./images//034.png)
 
 
-#### Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
+### Exercise 2.4.2 -Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
 
 1. In the SubProcess Builder, select the **+** next to the Decision and choose **Approvals > Approval Form**.
 
@@ -394,7 +391,7 @@ In this exercise you will learn:
   ![02](./images//047.png)
 
 
-### Add Condition <a name="condition"></a>
+## Exercise 2.5 - Add Condition <a name="condition"></a>
 
 1. In the Process Builder, select **+** next to the SubProcess and choose **Controls > Condition**.
 
@@ -425,7 +422,7 @@ In this exercise you will learn:
    ![02](./images//050a.png)  
 
 
-### Add Action to read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
+## Exercise 2.6 - Add Action to read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
 
 1. In the Process Builder, select **+** next to the yes branch of the Condition, then **Actions > Browse library**.
 
@@ -449,7 +446,7 @@ In this exercise you will learn:
   ![02](./images//054.png)
 
 
-### Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
+## Exercise 2.6 - Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
 
 1. In the Process Builder, select **+** next to the Action and choose **Actions > Browse library**.
    
@@ -477,7 +474,7 @@ In this exercise you will learn:
   ![02](./images//059.png)
 
 
-### Add Approval and Rejection Notifications <a name="approvalREjectionNotifications"></a>
+## Exercise 2.7 - Add Approval and Rejection Notifications <a name="approvalREjectionNotifications"></a>
 
 1. In the Process Builder, select **+** next to the **Updates a sales order** Action and choose **Forms > Approval Notification**.
 
@@ -556,56 +553,9 @@ In this exercise you will learn:
   ![02](./images//069.png)
 
 
-
-
-
-
-
-
-
-
-
-# Exercise 1 - Exercise 1 Description
-
-In this exercise, we will create...
-
-## Exercise 1.1 Sub Exercise 1 Description
-
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
-```
-
-
-
-## Exercise 1.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
-
-
 ## Summary
 
 You've now ...
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 3 - Create Workspace](../3_CreateWorkspace/README.md)
 
