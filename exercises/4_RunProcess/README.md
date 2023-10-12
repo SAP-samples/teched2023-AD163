@@ -11,16 +11,16 @@ After completing these steps you will have created...
 <br>Username / Password: Provided to you (Example : AD-***@education.cloud.sap , ******)
 
 2.	Search for va02 and click "Change Sales Order - VA02"
-<br>![](/exercises/ex2/images/VA02.png)
+<br>![](/exercises/4_RunProcess/images/VA02.png)
 
 3. Enter Order as the Sales Order number that was created in “Create Sales Order” exercise and click on “Continue”.
-<br>![](/exercises/ex2/images/EnterSOToEdit.png)
+<br>![](/exercises/4_RunProcess/images/EnterSOToEdit.png)
 
 4. In the “Sales” tab, enter Billing Block as any value from the drop down and “Save”. Note: The sales order is blocked only when any of the reasons are selected.
-<br>![](/exercises/ex2/images/UpdateBillingBlock.png)
+<br>![](/exercises/4_RunProcess/images/UpdateBillingBlock.png)
 
 5. Check the confirmation that the Sales Order was saved.
-<br>![](/exercises/ex2/images/ConfirmUpdateSO.png)
+<br>![](/exercises/4_RunProcess/images/ConfirmUpdateSO.png)
 
 
 ## Exercise 2.2 Monitor Process
