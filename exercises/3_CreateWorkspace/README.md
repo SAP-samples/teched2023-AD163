@@ -36,19 +36,23 @@ In this sub account, the apps are already configured for you, and you only need 
 To add the `apps` to the UI:
   1. Click the Pencil icon to edit your **Sales Order** workspace.
 
-  ![App design](appDesign.jpg)
+  ![App design](EditWorkpage_1.png)
 
 
   2. Click the **+** icon to add a section below the third row.
+  ![App design](EditWorkpage_2.png)
 
   3. Click **Add Widget** on the newly added section and and select **Tiles**.
 
+  ![App design](EditWorkpage_3.png)
+  
   4. Check the Create Sales Order,   and click **Add**.
+  ![App design](EditWorkpage_4.png)
 
-  5. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**.
-
-  6. Click **Publish** to publish your work.
-
+  6. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**.
+![App design](EditWorkpage_5.png)
+  7. Click **Publish** to publish your work.
+![App design](EditWorkpage_6.png)
 
 ### Integrate cards to your Workspace
 
