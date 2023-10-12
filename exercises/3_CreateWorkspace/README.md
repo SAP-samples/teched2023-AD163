@@ -46,13 +46,17 @@ To add the `apps` to the UI:
 
   ![App design](EditWorkpage_3.png)
   
-  4. Check the Create Sales Order,   and click **Add**.
+  4. Check the Create Sales Order, Display Sales Orders and Change Sales Orders and click **Add**.
   ![App design](EditWorkpage_4.png)
 
-  6. Click the cogwheel of this newly added section and add title **Apps**, and Top padding **30**.
+  6. Click the cogwheel of this newly added section
 ![App design](EditWorkpage_5.png)
-  7. Click **Publish** to publish your work.
-![App design](EditWorkpage_6.png)
+
+  7. Set title **Apps**, and Top padding **30** and click **Save**
+     ![App design](EditWorkpage_6.png)
+  8. Click **Publish** to publish your work.
+     ![App design](EditWorkpage_7.png)
+
 
 ### Integrate cards to your Workspace
 
