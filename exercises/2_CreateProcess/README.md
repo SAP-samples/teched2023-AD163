@@ -533,6 +533,27 @@ In this exercise you will learn:
 
   ![02](./images//066.png)
 
+15. Navigate back to the **Billing Block Removal Process**. Select the **+** next to the DEfault branch of the **is approved?** Condition. Then choose **Forms > Rejection Notification**.
+
+  ![02](./images//067.png)
+
+16. In the **General** section of the Form:
+
+  - Enter **Subject:** as **Removal of billing block is rejected for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Under **Recipients > Users**, enter your user such as **AD163_046**
+
+  ![02](./images//068.png)
+
+3. Go to the **Inputs** section of the Form:
+4. 
+  - Map **Billing Block Status** to **Process Inputs > data > OverallBillingBlockStatus**
+  - Map **Distribution Channel** to **Process Inputs > data > DistributionChannel**
+  - Map **Reason for Rejection** to **Approve Billing Block Removal > ApproverComments**
+  - Map **Sales Order Number** to **Process Inputs > data > SalesOrder**
+  - Map **Sold-To-Party** to **Process Inputs > data > SoldToParty**
+  - Choose **Save**
+
+  ![02](./images//069.png)
 
 
 
