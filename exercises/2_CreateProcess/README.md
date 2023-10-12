@@ -544,8 +544,8 @@ In this exercise you will learn:
 
   ![02](./images//068.png)
 
-3. Go to the **Inputs** section of the Form:
-4. 
+17. Go to the **Inputs** section of the Form:
+
   - Map **Billing Block Status** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **Distribution Channel** to **Process Inputs > data > DistributionChannel**
   - Map **Reason for Rejection** to **Approve Billing Block Removal > ApproverComments**
