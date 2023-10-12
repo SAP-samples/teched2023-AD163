@@ -585,7 +585,7 @@ Once your project is free of errors, you may release and deploy it.
 
   Your project is now deployed.
 
-    ![02](./images//076.png)
+  ![02](./images//076.png)
 
 ## Summary
 
