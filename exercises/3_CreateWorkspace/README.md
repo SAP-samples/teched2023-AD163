@@ -33,13 +33,13 @@ Follow this tutorial to create and design your Sales Management Workspace:  [Add
 In order to Integrate apps to Work Zone, you first need to configure them in the Content Manager of SAP Build Work Zone.
 In this sub account, the apps are already configured for you, and you only need to add them to the UI.
 
-To add the `appd` to the UI:
+To add the `apps` to the UI:
   1. Click the Pencil icon to edit your **Sales Order** workspace.
 
   ![App design](appDesign.jpg)
 
 
-  2. Click the + icon to add a section below the third row.
+  2. Click the **+** icon to add a section below the third row.
 
   3. Click **Add Widget** on the newly added section and and select **Tiles**.
 
