@@ -7,16 +7,16 @@
   - [Table of Contents ](#table-of-contents-)
   - [Overview ](#overview-)
   - [Exercise 2.1 - Add Event Trigger to Process ](#exercise-21---add-event-trigger-to-process-)
-  - [Exercise 2.2 - Add Condition to match Sales Order ](#exercise-22---add-condition-to-match-sales-order-)
-  - [Exercise 2.3 - Add Action to read Sales Order Items ](#exercise-23---add-action-to-read-sales-order-items-)
+  - [Exercise 2.2 - Add Condition to Match Sales Order ](#exercise-22---add-condition-to-match-sales-order-)
+  - [Exercise 2.3 - Add Action to Read Sales Order Items ](#exercise-23---add-action-to-read-sales-order-items-)
   - [Exercise 2.4 - Create Approval Sub-Process ](#exercise-24---create-approval-sub-process-)
     - [Exercise 2.4.1 - Add Decision to Determine Approver List ](#exercise-241---add-decision-to-determine-approver-list-)
     - [Exercise 2.4.2 - Add Approver Form with Sales Order Items Table ](#exercise-242---add-approver-form-with-sales-order-items-table-)
   - [Exercise 2.5 - Add Condition ](#exercise-25---add-condition-)
-  - [Exercise 2.6 - Add Action to read Sales Order Header ](#exercise-26---add-action-to-read-sales-order-header-)
+  - [Exercise 2.6 - Add Action to Read Sales Order Header ](#exercise-26---add-action-to-read-sales-order-header-)
   - [Exercise 2.7 - Add Action to Update Sales Order ](#exercise-27---add-action-to-update-sales-order-)
   - [Exercise 2.8 - Add Approval and Rejection Notifications ](#exercise-28---add-approval-and-rejection-notifications-)
-  - [Exercise 2.9 - Release and deploy the Process ](#exercise-29---release-and-deploy-the-process-)
+  - [Exercise 2.9 - Release and Deploy the Process ](#exercise-29---release-and-deploy-the-process-)
   - [Summary](#summary)
 
 ## Overview <a name="overview"></a>
@@ -90,7 +90,7 @@ In this exercise you will learn:
 
   ![02](./images//009.png)
 
-## Exercise 2.2 - Add Condition to match Sales Order <a name="matchSalesOrderCondition"></a>
+## Exercise 2.2 - Add Condition to Match Sales Order <a name="matchSalesOrderCondition"></a>
 
 1. In the Process Builder, select **+ > Controls > Condition**.
    
@@ -122,7 +122,7 @@ In this exercise you will learn:
   ![02](./images//014.png)
 
 
-## Exercise 2.3 - Add Action to read Sales Order Items <a name="actionReadSalesOrderItems"></a>
+## Exercise 2.3 - Add Action to Read Sales Order Items <a name="actionReadSalesOrderItems"></a>
 
 1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** condition, then choose **Actions > Browse library**.
    
@@ -423,7 +423,7 @@ In this exercise you will learn:
    ![02](./images//050a.png)  
 
 
-## Exercise 2.6 - Add Action to read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
+## Exercise 2.6 - Add Action to Read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
 
 1. In the Process Builder, select **+** next to the yes branch of the Condition, then **Actions > Browse library**.
 
@@ -553,7 +553,7 @@ In this exercise you will learn:
 
   ![02](./images//069.png)
 
-## Exercise 2.9 - Release and deploy the Process <a name="releaseDeployProcess"></a>
+## Exercise 2.9 - Release and Deploy the Process <a name="releaseDeployProcess"></a>
 
 Once your project is free of errors, you may release and deploy it.
 
