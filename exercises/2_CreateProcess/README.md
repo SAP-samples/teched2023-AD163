@@ -1,6 +1,6 @@
 # Exercise 2 - Create Process <a name="process"></a>
 
-<!-- description --> In this exercise, you will create a process to update the billing block based on the Approval
+<!-- description --> In this exercise, you will create a process in SAP Build Process Automation to update the billing block based on the Approval
 
 ## Table of Contents <a name="tableContents"></a>
 - [Exercise 2 - Create Process ](#exercise-2---create-process-)
@@ -65,7 +65,7 @@ In this exercise you will learn:
 
   The process gets added in the process builder.
 
-5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**
+5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**.
 
   ![02](./images//006.png)
 
@@ -117,6 +117,8 @@ In this exercise you will learn:
   - Choose **Apply**
 
   ![02](./images//013.png)
+
+  This Condition will match the value of the sales order you created.
 
 5. Save your work.
 
@@ -211,7 +213,7 @@ In this exercise you will learn:
 
   ![02](./images//022.png)
 
-3. In the **Create Decision** pop-up:
+2. In the **Create Decision** pop-up:
 
   - Enter **Name:** Determine Approver
   - Enter **Description:** Determine approver based on sales order distribution channel and sold to party
@@ -219,33 +221,33 @@ In this exercise you will learn:
 
   ![02](./images//023.png)
 
-4. Choose **Save** and then **Edit Decision**.
+3. Choose **Save** and then **Edit Decision**.
 
   ![02](./images//024.png)
 
   The decision editor opens. You sill start configuring the input and output parameters that are needed to add rules to the decision.
 
-5. Choose **Add Input Parameter**:
+4. Choose **Add Input Parameter**:
 
-  - Enter **Name:** SalesOrderInput
+  - Enter **Name:** SalesOrderInp
   - Enter **Description:** Sales order details
   - Select **Type:** Sales Order
 
-6. Choose **Add Output Parameter**:
+5. Choose **Add Output Parameter**:
 
   - Enter **Name:** ApproverOutput
   - Enter **Description:** Approver details
   - Select **Type:** Approver
 
-7. Select the **Rules** tab.
-
   ![02](./images//025.png)
 
-8. Choose **Add Rule**.
+6. Select the **Rules** tab.
+
+7. Choose **Add Rule**.
 
   ![02](./images//026.png)
 
-9. In the **Create Rule** window, you will enter the Rule Details:
+8. In the **Create Rule** window, you will enter the Rule Details:
 
   - Select **Decision Table**
   - Enter **Rule Name:** Get Approver
@@ -255,7 +257,7 @@ In this exercise you will learn:
 
   ![02](./images//027.png)
 
-10. Now you will configure the Conditions:
+9. Now you will configure the Conditions:
 
   - Under **Vocabulary > Input/Output**, select **SalesOrderInp > SoldToParty**
   - Select as **Operator:** =
@@ -263,18 +265,18 @@ In this exercise you will learn:
 
   ![02](./images//028.png)
 
-11. To configure the Results:
+10. To configure the Results:
 
   - Under **Vocabulary**, select **ApproverOutput > Email**
   - Choose **Next Step**
   
   ![02](./images//029.png)
 
-12. You may review your Decision Table and choose **Create**.
+11. You may review your Decision Table and choose **Create**.
 
   ![02](./images//030.png)
 
-13. Configure your Decision Table:
+12. Configure your Decision Table:
 
   - Under **SoldToParty =**, enter '17100001'
   - Under **Email**, enter your user such as 'AD163_046'
@@ -284,9 +286,11 @@ In this exercise you will learn:
 
   Now you need to map the decision to the process content.
 
-14. Navigate back to the **Modularize Approval Process**, select the **Decision** and choose **Inputs** section.
+13. Navigate back to the **Modularize Approval Process**, select the **Decision** and choose **Inputs** section.
 
   ![02](./images//032.png)
+
+  - Under **SalesOrderInp**, map **BillingBlockStatus** to **Process Inputs > SalesOrderInfo > BillingBlockStatus**.
 
   - Under **SalesOrderInp**, map **DistributionChannel** to **Process Inputs > SalesOrderInfo > DistributionChannel**.
     
@@ -298,7 +302,7 @@ In this exercise you will learn:
     
   - Under **SalesOrderInp**, map **SoldToParty** to **Process Inputs > SalesOrderInfo > SoldToParty**.
 
-15.  Save your work.
+14.  Save your work.
 
   ![02](./images//034.png)
 
@@ -315,7 +319,7 @@ In this exercise you will learn:
 
   The Form Builder opens. You will add a Sales Order Items Table.
 
-3. Select a Table field and drag and drop it between **Billing Block Status (C=Blocked)** field and the checkbox.
+3. Select a Table field and drag and drop it between **Billing Block Status (C=Blocked)** and the checkbox.
 
   ![02](./images//037.png)
 
@@ -338,27 +342,27 @@ In this exercise you will learn:
 
   ![02](./images//040.png)
 
-8. Navigate back to the Modularize Approval Process.
+8. Navigate back to the **Modularize Approval Process**.
 
 7. Select the Approval Form. In the **General** section of the Form:
 
-  - Enter **Subject:** Review and approve changes in billing block for sales order:
+  - Enter **Subject:** Review and approve changes in billing block for sales order: and select **SalesOrderNumber** from the **Process Inputs**.
   - Under **Recipients**, map **Users** to **Determine Approver > ApproverOutput > Email**
 
   ![02](./images//041.png)
 
 8. Go to the **Inputs** section and map the inputs with the Process Content:
 
-  - BillingBlockStatus to **Process inputs > SalesOrderInfo > BillingBlockStatus**
-  - Distribution Channel to **Process inputs > SalesOrderInfo > DistributionChannel**
-  - **Items Details > list - SalesOrderItemDetails** to **Process Inputs > list SalesOrderItemDetails**
-  - Sales Order Number to **Process inputs > SalesOrderInfo > SalesOrderNumber**
-  - Sold-To-Party to **Process inputs > SalesOrderInfo > SoldToParty**
+  - **BillingBlockStatus** to Process inputs > SalesOrderInfo > BillingBlockStatus
+  - **Distribution Channel** to Process inputs > SalesOrderInfo > DistributionChannel
+  - **Items Details** to Process Inputs > list SalesOrderItemDetails
+  - **Sales Order Number** to Process inputs > SalesOrderInfo > SalesOrderNumber
+  - **Sold-To-Party** to Process inputs > SalesOrderInfo > SoldToParty
   - Choose **Save**
 
   ![02](./images//042.png)
 
-9. Connect the Reject node of the Approval Form to the End activity.
+1. Connect the Reject node of the Approval Form to the End activity.
     
   ![02](./images//043.png)
 
@@ -368,17 +372,18 @@ In this exercise you will learn:
 
   ![02](./images//044.png)
 
-11. Map **Process Outputs > ApproverComments** to **Approval Form > Approver's Comment**
-    
-12. Map **Process Outputs > isApproved** to **Approval Form > Select the checkbox...**
+11. Under Process Outputs:
+  
+  - Map **ApproverComments** to **Approval Form > Approver's Comment**
+  - Map **isApproved** to **Approval Form > Select the checkbox...**
 
-13. Save your work.
+12. Save your work.
 
   ![02](./images//045.png)
 
   Now that you you have created your Approval SubProcess you need to configure the inputs of the SubProcess with the Process Content.
 
-14. Navigate back to the Billing Block Removal Process, select the Approval Billing Block Removal SubProcess and go to Inputs section.
+14. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** SubProcess and go to Inputs section.
 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
@@ -401,8 +406,8 @@ In this exercise you will learn:
 
 2. In the Condition panel on the right:
 
-  - Change the **Step Name:** is approved?
-  - Change the **Branch Name:** to yes
+  - Change the **Step Name** to: is approved?
+  - Change the **Branch Name** to: yes
   - Choose **Save** and **Open Condition Editor** to define the Condition
 
   ![02](./images//049.png)
@@ -413,7 +418,7 @@ In this exercise you will learn:
   - Select true
   - Choose **Apply**
 
-  The Condition reads: if value of isApproved is equal to true.
+  The Condition will match if change to billing block in sales order is approved.
 
   ![02](./images//050.png)
 
@@ -430,7 +435,7 @@ In this exercise you will learn:
 
   ![02](./images//051.png)
 
-2. In the **Browse library** pop-up, select **Reads the header of a sales order** action from **Project: Sales Order** and choose **Add**.
+2. In the **Browse library** pop-up, select **Reads the header of a sales order** Action from **Project: Sales Order** and choose **Add**.
    
   ![02](./images//052.png)
 
@@ -454,7 +459,7 @@ In this exercise you will learn:
    
   ![02](./images//055.png)
 
-2. In the **Browse library** pop-up, select **Updates a sales order** action from **Project: Sales Order** and choose **Add**.
+2. In the **Browse library** pop-up, select **Updates a sales order** Action from **Project: Sales Order** and choose **Add**.
    
   ![02](./images//056.png)
 
@@ -465,7 +470,7 @@ In this exercise you will learn:
 
   ![02](./images//057.png)
 
-4. Go to the **Inputs** section of the Action and map **ifMatch** to **Get ETAG for Patch > result > Sales Order Header > metadata > etag**.
+4. Go to the **Inputs** section of the Action and map **ifMatch** to **Get ETAG for PATCH > result > Sales Order Header > metadata > etag**.
 
   ![02](./images//058.png)
 
@@ -484,7 +489,7 @@ In this exercise you will learn:
 
 2. In the **General** section of the Form:
 
-  - Enter **Subject:** as **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Enter **Subject** as **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
   - Under **Recipients > Users**, enter your user such as **AD163_046**
 
   ![02](./images//061.png)
@@ -512,9 +517,9 @@ In this exercise you will learn:
 
   The Form Builder opens. Now, you will update your Rejection Notification to reflect rejection.
 
-7. Change the **Headline** to: Billing Block Removal Rejected.
+7. Change the **Headline** to: Billing Block Removal Rejected
    
-8. Drag and drop a **Paragraph** field after the Headline field and enter as **New Paragraph:** The request to remove the billing block on the sales order has been rejected. You can find the reason of rejection and the details of your the sales order below:
+8. Drag and drop a **Paragraph** field after the Headline field and enter as **New Paragraph:** The request to remove the billing block on the sales order has been rejected. You can find the reason of rejection and the details of your sales order below:
     
 9. Drag ad drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection. 
     
@@ -532,13 +537,15 @@ In this exercise you will learn:
 
   ![02](./images//066.png)
 
-15. Navigate back to the **Billing Block Removal Process**. Select the **+** next to the DEfault branch of the **is approved?** Condition. Then choose **Forms > Rejection Notification**.
+15. Navigate back to the **Billing Block Removal Process**. Select the **+** next to the Default branch of the **is approved?** Condition. Then choose **Forms > Rejection Notification**.
 
   ![02](./images//067.png)
 
+  Your Form gets added to the process.
+
 16. In the **General** section of the Form:
 
-  - Enter **Subject:** as **Removal of billing block is rejected for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Enter **Subject** as **Removal of billing block is rejected for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
   - Under **Recipients > Users**, enter your user such as **AD163_046**
 
   ![02](./images//068.png)
@@ -590,7 +597,7 @@ Once your project is free of errors, you may release and deploy it.
 
 ## Summary
 
-You've now ...
+Your project is now released and deployed in SAP Build and you can start creating and designing your Workspace using SAP Build Work Zone, advanced edition.
 
 Continue to - [Exercise 3 - Create Workspace](../3_CreateWorkspace/README.md)
 
