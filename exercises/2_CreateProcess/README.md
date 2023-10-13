@@ -28,7 +28,8 @@ In this exercise you will learn:
 - How to create an approval sub-process
 - How to add a condition
 - How to add action to update sales order
-- How to add confirmation and rejection notifications
+- How to add approval and rejection notifications
+- How to release and deploy the process
 
 ## Exercise 2.1 - Add Event Trigger to Process <a name="eventTrigger"></a>
 
