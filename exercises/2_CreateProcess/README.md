@@ -55,7 +55,7 @@ In this exercise you will learn:
  
   ![02](./images//004.png)
 
-4. In the **Create Process pop-up**:
+4. In the **Create Process** pop-up:
 
   - Enter **Name:** Billing Block Removal Process
   - Enter **Description:** Process to update the billing block based on the Approval
@@ -82,7 +82,7 @@ In this exercise you will learn:
 
   ![02](./images//008.png)
 
-8. In **General** tab of **Process Details**:
+8. In **General** section of the **Process Details**:
    
   - Enter **Subject:** Process to approve the removal of billing block and updating the sales order and select the Process Input **SalesOrder**
   - As **Business Key**, select the Process Input **SalesOrder**
@@ -103,15 +103,15 @@ In this exercise you will learn:
 
 3. Select the **Condition** control and perform the following:
 
-  - Change the **Step Name** to sales order matches?
-  - Change the **Branch Name** to yes.
+  - Change the **Step Name** to: sales order matches?
+  - Change the **Branch Name** to: yes.
   - Choose **Open Condition Editor** to define the Condition.
 
   ![02](./images//012.png)
 
 4. In the **Edit Branch Condition**, set the condition:
 
-  - Select Process Input SalesOrder
+  - Select Process Input **SalesOrder**
   - Select **is equal to**
   - Enter the number of the sales order you created in exercise 1
   - Choose **Apply**
@@ -149,11 +149,11 @@ In this exercise you will learn:
   
 ## Exercise 2.4 - Create Approval Sub-Process <a name="approvalSubProcess"></a>
 
-1. In the Process Builder, select the **+** next to the **Reads Sales Order Items** action and choose **Subprocesses > + New Process**.
+1. In the Process Builder, select the **+** next to the **Reads Sales Order Items** Action and choose **Subprocesses > + New Process**.
 
   ![02](./images//019.png)
 
-2. In The **Create Process** pop-up:
+2. In the **Create Process** pop-up:
    
   - Enter **Name:** Approve Billing Block Removal
   - Enter **Description:** Process to modularize the approval process
@@ -167,7 +167,7 @@ In this exercise you will learn:
 
   The SubProcess Builder will open.
 
-4. In the **General** section:
+4. In the **General** section of the Process Details:
 
   - Change the **Process name** to Modularize Approval Process
   - Change the **Subject** to SubProcess to approve changes to billing block in sales order
@@ -284,7 +284,7 @@ In this exercise you will learn:
 
   Now you need to map the decision to the process content.
 
-14. Navigate back to the **Modularize Approval Process**, select the **Decision** and choose **Inputs** tab
+14. Navigate back to the **Modularize Approval Process**, select the **Decision** and choose **Inputs** section.
 
   ![02](./images//032.png)
 
@@ -340,14 +340,14 @@ In this exercise you will learn:
 
 8. Navigate back to the Modularize Approval Process.
 
-7. Select the Approval Form. In the **General** section:
+7. Select the Approval Form. In the **General** section of the Form:
 
   - Enter **Subject:** Review and approve changes in billing block for sales order:
   - Under **Recipients**, map **Users** to **Determine Approver > ApproverOutput > Email**
 
   ![02](./images//041.png)
 
-8. Go to the **Inputs** tab and map the inputs with the Process Content:
+8. Go to the **Inputs** section and map the inputs with the Process Content:
 
   - BillingBlockStatus to **Process inputs > SalesOrderInfo > BillingBlockStatus**
   - Distribution Channel to **Process inputs > SalesOrderInfo > DistributionChannel**
@@ -378,7 +378,7 @@ In this exercise you will learn:
 
   Now that you you have created your Approval SubProcess you need to configure the inputs of the SubProcess with the Process Content.
 
-14. Navigate back to the Billing Block Removal Process, select the Approval Billing Block Removal SubProcess and go to Inputs Tab.
+14. Navigate back to the Billing Block Removal Process, select the Approval Billing Block Removal SubProcess and go to Inputs section.
 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
