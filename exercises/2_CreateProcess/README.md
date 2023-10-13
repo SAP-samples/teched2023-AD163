@@ -344,14 +344,14 @@ In this exercise you will learn:
 
 8. Navigate back to the **Modularize Approval Process**.
 
-7. Select the Approval Form. In the **General** section of the Form:
+9. Select the Approval Form. In the **General** section of the Form:
 
   - Enter **Subject:** Review and approve changes in billing block for sales order: and select **SalesOrderNumber** from the **Process Inputs**.
   - Under **Recipients**, map **Users** to **Determine Approver > ApproverOutput > Email**
 
   ![02](./images//041.png)
 
-8. Go to the **Inputs** section and map the inputs with the Process Content:
+10. Go to the **Inputs** section and map the inputs with the Process Content:
 
   - **BillingBlockStatus** to Process inputs > SalesOrderInfo > BillingBlockStatus
   - **Distribution Channel** to Process inputs > SalesOrderInfo > DistributionChannel
@@ -362,28 +362,28 @@ In this exercise you will learn:
 
   ![02](./images//042.png)
 
-1. Connect the Reject node of the Approval Form to the End activity.
+11. Connect the Reject node of the Approval Form to the End activity.
     
   ![02](./images//043.png)
 
   You will map the Process Outputs to the Process Content of the Approval Form.
 
-10. Select the End activity.
+12. Select the End activity.
 
   ![02](./images//044.png)
 
-11. Under Process Outputs:
+13. Under Process Outputs:
   
   - Map **ApproverComments** to **Approval Form > Approver's Comment**
   - Map **isApproved** to **Approval Form > Select the checkbox...**
 
-12. Save your work.
+14. Save your work.
 
   ![02](./images//045.png)
 
   Now that you you have created your Approval SubProcess you need to configure the inputs of the SubProcess with the Process Content.
 
-14. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** SubProcess and go to Inputs section.
+15. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** SubProcess and go to Inputs section.
 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
