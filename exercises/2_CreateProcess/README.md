@@ -597,7 +597,7 @@ Once your project is free of errors, you may release and deploy it.
 
 ## Summary
 
-Your project is now released and deployed in SAP Build and you can start creating and designing your Workspace using SAP Build Work Zone, advanced edition.
+Your project is released and deployed in SAP Build and you can start creating and designing your Workspace using SAP Build Work Zone, advanced edition.
 
 Continue to - [Exercise 3 - Create Workspace](../3_CreateWorkspace/README.md)
 
