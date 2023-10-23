@@ -28,7 +28,7 @@ In this scenario: <br>
 - SAP Event Mesh is configured to listen and communicate events 
 - Process is triggered to approve the changes in SAP Build Process Automation
 - Sales Order (A2X) API is used to get and patch sales order details in the backend system
-- SAP Work Zone workspace is used to provide centralized access to S/4HANA applications, and workflow inbox applications
+- SAP Build Work Zone workspace is used to provide centralized access to S/4HANA applications, workflow inbox applications, and other web content
 - Finally, sales representative is informed once the sales orders are updated
 - In addition, whole process can be managed and monitored using out-of-the-box visibility.
     
