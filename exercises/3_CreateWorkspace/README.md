@@ -54,7 +54,8 @@ To add the `apps` to the UI:
 
   7. Set title **Apps**, and Top padding **30** and click **Save**
      ![App design](EditWorkpage_6.png)
-  8. Click **Publish** to publish your work.
+     
+  9. Click **Publish** to publish your work.
      ![App design](EditWorkpage_7.png)
 
 
@@ -72,20 +73,25 @@ To add the `cards` to the UI:
   2. Click the **+** icon to add a section below the apps section.
   ![App design](AddCards_2.png)
 
-  3. Click **Add Widget** on the newly added section and and select **Tiles**.
+  3. Click **Add Widget** on the newly added section 
 
   ![App design](AddCards_3.png)
   
-  4. Check the Create Sales Order,   and click **Add**.
+  4. Select **Cards**
+  
+  ![App design](AddCards_4.png)
+  
+  5. Check the first card, and click **Add**.
   ![App design](AddCards_4.png)
 
-  5. Click the cogwheel of this newly added section 
+  6. Now add the second card just below the card you just added
+  7.  Click the cogwheel of this newly added section 
 ![App design](AddCards_5.png)
 
-  6. Set title **Apps**, and Top padding **30**. and click **Save**
+  8. Set title **Cards**, and Top padding **30**. and click **Save**
 ![App design](EditWorkpage_6.png)
   
-  7. Click **Publish** to publish your work.
+  9. Click **Publish** to publish your work.
 ![App design](EditWorkpage_7.png)
 
 
