@@ -57,7 +57,6 @@ To add the `apps` to the UI:
      
    <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_6.png)  
   7. Click **Publish** to publish your work.
-     
      <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
 
 
