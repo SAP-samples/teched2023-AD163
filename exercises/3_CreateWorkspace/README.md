@@ -94,13 +94,9 @@ To add the `cards` to the UI:
 
   7. Now add the second card just below the card you just added
   
-  8.  Click the cogwheel of this newly added section 
+  8.  Click the cogwheel of this newly added section, (like you did for the apps section), and set title **Cards**, and Top padding **30**.  click **Save**
 
-
-  9. Set title **Cards**, and Top padding **30**. and click **Save**
-
-  
-  10. Click **Publish** to publish your work.
+  9. Click **Publish** to publish your work.
 <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
 
 
