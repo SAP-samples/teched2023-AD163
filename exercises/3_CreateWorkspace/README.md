@@ -79,6 +79,8 @@ To add the `cards` to the UI:
 
   
   <br>![](/exercises/3_CreateWorkspace/images/AddCards_3.png)
+  
+  
   5. Select **Cards**
   <br>![](/exercises/3_CreateWorkspace/images/AddCards_4.png)
   
