@@ -43,19 +43,22 @@ To add the `apps` to the UI:
 <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_2.png)
   3. Click **Add Widget** on the newly added section and and select **Tiles**.
 
-  ![App design](EditWorkpage_3.png)
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_3.png)
+
+  
   
   4. Check the Create Sales Order, Display Sales Orders and Change Sales Orders and click **Add**.
-  ![App design](EditWorkpage_4.png)
+  
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_4.png)
+  5. Click the cogwheel of this newly added section
 
-  6. Click the cogwheel of this newly added section
-![App design](EditWorkpage_5.png)
-
-  7. Set title **Apps**, and Top padding **30** and click **Save**
-     ![App design](EditWorkpage_6.png)
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_5.png)
+  6. Set title **Apps**, and Top padding **30** and click **Save**
      
-  9. Click **Publish** to publish your work.
-     ![App design](EditWorkpage_7.png)
+   <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_6.png)  
+  7. Click **Publish** to publish your work.
+     
+     <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
 
 
 ### Integrate cards to your Workspace
@@ -66,32 +69,36 @@ In this sub account, the cards are already created and deployed for you, and you
 To add the `cards` to the UI:
   1. Click the Pencil icon to edit your **Sales Order** workspace.
 
-  ![App design](EditWorkpage_1.png)
-
+  
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_1.png)
 
   2. Click the **+** icon to add a section below the apps section.
-  ![App design](AddCards_2.png)
-
-  3. Click **Add Widget** on the newly added section 
-
-  ![App design](AddCards_3.png)
   
-  4. Select **Cards**
+<br>![](/exercises/3_CreateWorkspace/images/AddCards_2.png)
+
+  4. Click **Add Widget** on the newly added section 
+
   
-  ![App design](AddCards_4.png)
+  <br>![](/exercises/3_CreateWorkspace/images/AddCards_3.png)
+  5. Select **Cards**
+  <br>![](/exercises/3_CreateWorkspace/images/AddCards_4.png)
+  
   
   5. Check the first card, and click **Add**.
-  ![App design](AddCards_4.png)
-
-  6. Now add the second card just below the card you just added
-  7.  Click the cogwheel of this newly added section 
-![App design](AddCards_5.png)
-
-  8. Set title **Cards**, and Top padding **30**. and click **Save**
-![App design](EditWorkpage_6.png)
   
-  9. Click **Publish** to publish your work.
-![App design](EditWorkpage_7.png)
+<br>![](/exercises/3_CreateWorkspace/images/AddCards_5.png)
+
+  7. Now add the second card just below the card you just added
+  8.  Click the cogwheel of this newly added section 
+![App design](AddCards_5.png)
+<br>![](/exercises/3_CreateWorkspace/images/AddCards_6.png)
+
+  10. Set title **Cards**, and Top padding **30**. and click **Save**
+
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_6.png)
+  
+  12. Click **Publish** to publish your work.
+<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
 
 
 
