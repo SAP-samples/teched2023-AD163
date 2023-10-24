@@ -97,7 +97,7 @@ To add the `cards` to the UI:
   8.  Click the cogwheel of this newly added section, (like you did for the apps section), and set title **Cards**, and Top padding **30**.  click **Save**
 
   9. Click **Publish** to publish your work.
-<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
+<br>![](/exercises/3_CreateWorkspace/images/Publish_2.png)
 
 
 
