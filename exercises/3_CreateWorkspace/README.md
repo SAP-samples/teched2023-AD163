@@ -90,16 +90,15 @@ To add the `cards` to the UI:
 <br>![](/exercises/3_CreateWorkspace/images/AddCards_5.png)
 
 6. Click Save
-  <br>![](/exercises/3_CreateWorkspace/images/AddCards_6.png)
+ <br>![](/exercises/3_CreateWorkspace/images/AddCards_6.png)
 
   7. Now add the second card just below the card you just added
   
   8.  Click the cogwheel of this newly added section 
-![App design](AddCards_5.png)
+
 
   9. Set title **Cards**, and Top padding **30**. and click **Save**
 
-<br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_6.png)
   
   10. Click **Publish** to publish your work.
 <br>![](/exercises/3_CreateWorkspace/images/EditWorkpage_7.png)
