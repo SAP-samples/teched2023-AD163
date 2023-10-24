@@ -36,7 +36,7 @@ In this sub account, the apps are already configured for you, and you only need 
 To add the `apps` to the UI:
   1. Click the Pencil icon to edit your **Sales Order** workspace.
 
-  ![App design](/exercises/3_CreateWorkdpace/Images/EditWorkpage_1.png)
+  ![App design](/exercises/3_CreateWorkdpace/images/EditWorkpage_1.png) 
 
 
   2. Click the **+** icon to add a section below the third row.
