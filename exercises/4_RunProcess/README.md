@@ -70,7 +70,12 @@ After completing these steps you will have created...
 
 2.	Submit and check the status in S/4HANA.
 
+## Exercise 4.5 View updated billing
 
+1. Click on Display Sales Order (VA03) from your Workspace
+<br>![](/exercises/ex2/images/view-1.png)
+
+2.	Submit and check the status in S/4HANA.
 ## Summary
 
 You've now ...
