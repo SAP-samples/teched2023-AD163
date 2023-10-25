@@ -2,8 +2,15 @@
 
 In this exercise, we will update the Sales Order that was created and add a billing reason to block the Sales Order for billing. The required event is dispatched from SAP S/AHANA and the process in SAP Build Process Automation is triggered. User approves the billing block removal via an approval form and the billing block in removed in  SAP S/4HANA.
 
-## Exercise 2.1 Change Billing Block Status in S/4HANA
+## Exercise 4.1 Access your business site on runtime
+As a Sales Management team member, you work and collaborate using SAP Build Work Zone, and specifically, using the Workspace your created.
 
+To access the site on runtime, navigate to Work Zone runtime by clicking on this URL: https://ad163-hxj0v9xc.workzone.cfapps.eu10.hana.ondemand.com/site#workzone-home 
+
+From the Work Zone homepage, click on Workspaces and select the Workspace you created
+<br>![](/exercises/4_RunProcess/images/runtime.png)
+
+## Exercise 4.4 Change Billing Block Status in S/4HANA
 After completing these steps you will have created...
 
 1. Logon to the S/4HANA system
@@ -24,7 +31,7 @@ After completing these steps you will have created...
 
 Note: Now the event “Billing block status changed” will be triggered from SAP S/4HANA which will trigger the process that is created in SAP Build Process Automation.
 
-## Exercise 2.2 Monitor Process
+## Exercise 4.3 Monitor Process
 
 After completing these steps you will have...
 
@@ -49,7 +56,7 @@ After completing these steps you will have...
    
 
 
-## Exercise 2.3 Approves Sales Order Update from Inbox
+## Exercise 4.4 Approves Sales Order Update from Inbox
 After completing these steps you will have created...
 
 1. Click on “My Inbox” icon on the top right to approve the  task.
