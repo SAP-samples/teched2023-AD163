@@ -75,7 +75,7 @@ After completing these steps you will have created...
 1. Click on Display Sales Order (VA03) from your Workspace
 <br>![](/exercises/4_RunProcess/images/view-1.png)
 
-3.	Submit and check the status in S/4HANA.
+   
 ## Summary
 
 You've now ...
