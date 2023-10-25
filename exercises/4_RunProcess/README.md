@@ -20,7 +20,7 @@ To access the Workspace on runtime:
 5.  You can also scroll to view the cards you added, notice that when you click on the items on the first card, it filters data on the second one
 <br>![](/exercises/4_RunProcess/images/runtime-5.png)
 
-6. To update a Sales Order, launch the Udtae sales order (VA02) app
+6. To update a Sales Order, launch the Change Sales Order (VA02) app from your Workspace
 <br>![](/exercises/4_RunProcess/images/runtime-6.png)   
 
 ## Exercise 4.2 Change Billing Block Status in S/4HANA
