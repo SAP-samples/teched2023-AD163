@@ -5,12 +5,25 @@ In this exercise, we will update the Sales Order that was created and add a bill
 ## Exercise 4.1 Access your business site on runtime
 As a Sales Management team member, you work and collaborate using SAP Build Work Zone, and specifically, using the Workspace your created.
 
-To access the site on runtime, navigate to Work Zone runtime by clicking on this URL: https://ad163-hxj0v9xc.workzone.cfapps.eu10.hana.ondemand.com/site#workzone-home 
+To access the Workspace on runtime:
+1. navigate to Work Zone runtime by clicking on this URL: https://ad163-hxj0v9xc.workzone.cfapps.eu10.hana.ondemand.com/site#workzone-home 
 
-From the Work Zone homepage, click on Workspaces and select the Workspace you created
-<br>![](/exercises/4_RunProcess/images/runtime.png)
+2. From the Work Zone homepage, click on Workspaces and select the Workspace you created
+<br>![](/exercises/4_RunProcess/images/runtime-2.png)
 
-## Exercise 4.4 Change Billing Block Status in S/4HANA
+3. Your Sales Management Workspace should look like this
+<br>![](/exercises/4_RunProcess/images/runtime-3.png)
+
+4. You may want to get advice from your colleagues , click Ask a Question and post your question.
+<br>![](/exercises/4_RunProcess/images/runtime-4.png)
+
+5.  You can also scroll to view the cards you added, notice that when you click on the items on the first card, it filters data on the second one
+<br>![](/exercises/4_RunProcess/images/runtime-5.png)
+
+6. To update a Sales Order, launch the Udtae sales order (VA02) app
+<br>![](/exercises/4_RunProcess/images/runtime-6.png)   
+
+## Exercise 4.2 Change Billing Block Status in S/4HANA
 After completing these steps you will have created...
 
 1. Logon to the S/4HANA system
