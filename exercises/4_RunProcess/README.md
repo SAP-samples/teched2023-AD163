@@ -1,4 +1,4 @@
-# Test end to end process
+# Exercise 4 - Run Process
 
 In this exercise, we will update the Sales Order that was created and add a billing reason to block the Sales Order for billing. The required event is dispatched from SAP S/AHANA and the process in SAP Build Process Automation is triggered. User approves the billing block removal via an approval form and the billing block in removed in  SAP S/4HANA.
 
