@@ -32,6 +32,7 @@ In this exercise you will learn:
 - How to release and deploy the process
 
 ## Exercise 2.1 - Add Event Trigger to Process <a name="eventTrigger"></a>
+  Navigate to SAP Build Lobby. https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
 
 1. In the Lobby, select the three dots next to project **AD163 - XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
