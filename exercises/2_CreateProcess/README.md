@@ -63,7 +63,7 @@ In this exercise you will learn:
 
   ![02](./images//005.png)
 
-  The process gets added in the process builder. Now you will add an Event Trigger to the Process. 
+  The Process gets added in the process builder. Now you will add an Event Trigger to the Process. 
   
   > Event Triggers onboard and listen to back-end events emitted from an external source system and react to such events by triggering artifacts such as processes and automations.
 
@@ -129,7 +129,7 @@ You will add a Condition to the Process that will match the value of the sales o
 
 ## Exercise 2.3 - Add Action to Read Sales Order Items <a name="actionReadSalesOrderItems"></a>
 
-Next you will add an Action to the Process that will read the sales order items. 
+Next, you will add an Action to the Process that will read the sales order items. 
 
 > With Actions, you can embed external skills and capabilities into your business process projects by uploading an open API specification file in JSON format. Action projects allow external systems and solutions to communicate with SAP Build Process Automation.
 
@@ -171,7 +171,7 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
 
   ![02](./images//020.png)
 
-3. In the **General** section of the SubProcess, select **Edit Process**.
+3. In the **General** section of the Sub-Process, select **Edit Process**.
 
   ![02](./images//021.png)
 
@@ -321,7 +321,7 @@ Now, you will add a Decision to the Process that will determine approver based o
 
 You will add the Approval Form to the Process and add a Sales Order Items Table to the Form.
 
-1. In the SubProcess Builder, select the **+** next to the Decision and choose **Approvals > Approval Form**.
+1. In the Sub-Process Builder, select the **+** next to the Decision and choose **Approvals > Approval Form**.
 
   ![02](./images//035.png)
 
@@ -395,7 +395,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
   Now that you you have created your Approval Sub-Process you need to configure the inputs of the Sub-Process with the Process Content.
 
-15. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** SubProcess and go to Inputs section.
+15. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** Sub-Process and go to Inputs section.
 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
@@ -414,7 +414,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
 You will add a Condition to the Process to match if change to billing block in sales order is approved.
 
-1. In the Process Builder, select **+** next to the SubProcess and choose **Controls > Condition**.
+1. In the Process Builder, select **+** next to the Sub-Process and choose **Controls > Condition**.
 
   ![02](./images//048.png)
 
