@@ -41,7 +41,7 @@ There are no dedicated requirement for this exercise. But in case you want to ga
 
 ## Exercises
 
-- [Exercise 1 - Create and Configure Sales Order](exercises/ex1/)
+- [Exercise 1 - Create and Configure Sales Order](exercises/1_CreateSalesOrder/)
 - [Exercise 2 - Create Process](exercises/2_CreateProcess/)
     - [Exercise 2.1 - Add Event Trigger to Process](exercises/2_CreateProcess#exercise-21---add-event-trigger-to-process-)
     - [Exercise 2.2 - Add Condition to Match Sales Order](exercises/2_CreateProcess#exercise-22---add-condition-to-match-sales-order-)
@@ -58,7 +58,7 @@ There are no dedicated requirement for this exercise. But in case you want to ga
     - [Exercise 3.1 - Design a Workspace for Sales Management](exercises/3_CreateWorkspace#exercise-41-sub-exercise-1-description)
     - [Exercise 3.2 - Integrate Apps and Cards to your Workspace](exercises/3_CreateWorkspace#exercise-42-sub-exercise-2-description)
     - [Exercise 3.3 - Experience improved Sales collaboration by accessing your Workspace, view data, run apps and Approves Sales Orders from Inbox](exercises/3_CreateWorkspace#exercise-43-sub-exercise-3-description)
-- [Exercise 4 - Run Process](exercises/ex3/)
+- [Exercise 4 - Run Process](exercises/4_RunProcess/)
     - [Exercise 4.1 - Change Billing Block Status in S/4HANA](exercises/ex3#exercise-31-sub-exercise-1-description)
     - [Exercise 4.2 - Monitor Process](exercises/ex3#exercise-32-sub-exercise-2-description)
     - [Exercise 4.3 - Approves Sales Order Update from Inbox](exercises/ex3#exercise-33-sub-exercise-3-description)
