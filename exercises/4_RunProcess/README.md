@@ -43,7 +43,7 @@ After completing these steps you will have...
 
 1.	Login to the SAP Build Lobby 
 <br>URL : https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
-<br>Username / Password : Provided to you (Example : AD-***@education.cloud.sap , ******)
+<br>Username / Password : Provided to you (Example : AD_XXX , ******)
 <br>![](/exercises/4_RunProcess/images/Monitor01.png)
 
 3.	Click on “Monitor” and then click on “Process Workflow and Instances”.
