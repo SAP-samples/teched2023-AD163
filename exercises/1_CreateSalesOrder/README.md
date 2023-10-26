@@ -8,7 +8,7 @@ After completing these steps you will have a Sales Order number created without 
 
 1.	Logon to the S/4HANA system
   <br>S/4HANA Cloud URL: https://my407161.s4hana.cloud.sap/ui
-  <br>Username / Password: Provided to you (Example : **AD163_XXX, Acce$$teched23**)
+  <br>Username / Password: Provided to you (Example : **AD163_004, Acce$$teched23**)
 
 2. Search for va01 and click "Create Sales Order - VA01"
    <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
