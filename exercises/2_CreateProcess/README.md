@@ -63,7 +63,9 @@ In this exercise you will learn:
 
   ![02](./images//005.png)
 
-  The process gets added in the process builder.
+  The process gets added in the process builder. Now you will add an Event Trigger to the Process. 
+  
+  > Event Triggers onboard and listen to back-end events emitted from an external source system and react to such events by triggering artifacts such as processes and automations.
 
 5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**.
 
@@ -93,6 +95,8 @@ In this exercise you will learn:
 
 ## Exercise 2.2 - Add Condition to Match Sales Order <a name="matchSalesOrderCondition"></a>
 
+You will add a Condition to the Process that will match the value of the sales order you created.
+
 1. In the Process Builder, select **+ > Controls > Condition**.
    
   ![02](./images//010.png)
@@ -118,14 +122,16 @@ In this exercise you will learn:
 
   ![02](./images//013.png)
 
-  This Condition will match the value of the sales order you created.
-
 5. Save your work.
 
   ![02](./images//014.png)
 
 
 ## Exercise 2.3 - Add Action to Read Sales Order Items <a name="actionReadSalesOrderItems"></a>
+
+Next you will add an Action to the Process that will read the sales order items. 
+
+> With Actions, you can embed external skills and capabilities into your business process projects by uploading an open API specification file in JSON format. Action projects allow external systems and solutions to communicate with SAP Build Process Automation.
 
 1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** condition, then choose **Actions > Browse library**.
    
@@ -151,6 +157,8 @@ In this exercise you will learn:
   
 ## Exercise 2.4 - Create Approval Sub-Process <a name="approvalSubProcess"></a>
 
+Next, you will add a Sub-Process to your main Process in the process builder, allowing you to modularize the approval process.
+
 1. In the Process Builder, select the **+** next to the **Reads Sales Order Items** Action and choose **Subprocesses > + New Process**.
 
   ![02](./images//019.png)
@@ -167,7 +175,7 @@ In this exercise you will learn:
 
   ![02](./images//021.png)
 
-  The SubProcess Builder will open.
+  The Sub-Process Builder will open.
 
 4. In the **General** section of the Process Details:
 
@@ -208,6 +216,8 @@ In this exercise you will learn:
 9. Save your work.
     
 ### Exercise 2.4.1 - Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
+
+Now, you will add a Decision to the Process that will determine approver based on sales order distribution and sold to party.
 
 1. Select the **+** next to the Trigger, and choose **Decision > + New Decision**
 
@@ -309,6 +319,8 @@ In this exercise you will learn:
 
 ### Exercise 2.4.2 - Add Approver Form with Sales Order Items Table <a name="approverForm"></a>
 
+You will add the Approval Form to the Process and add a Sales Order Items Table to the Form.
+
 1. In the SubProcess Builder, select the **+** next to the Decision and choose **Approvals > Approval Form**.
 
   ![02](./images//035.png)
@@ -381,7 +393,7 @@ In this exercise you will learn:
 
   ![02](./images//045.png)
 
-  Now that you you have created your Approval SubProcess you need to configure the inputs of the SubProcess with the Process Content.
+  Now that you you have created your Approval Sub-Process you need to configure the inputs of the Sub-Process with the Process Content.
 
 15. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** SubProcess and go to Inputs section.
 
@@ -399,6 +411,8 @@ In this exercise you will learn:
 
 
 ## Exercise 2.5 - Add Condition <a name="condition"></a>
+
+You will add a Condition to the Process to match if change to billing block in sales order is approved.
 
 1. In the Process Builder, select **+** next to the SubProcess and choose **Controls > Condition**.
 
@@ -418,8 +432,6 @@ In this exercise you will learn:
   - Select true
   - Choose **Apply**
 
-  The Condition will match if change to billing block in sales order is approved.
-
   ![02](./images//050.png)
 
 4. Connect the outgoing Default branch of the Condition to the End activity.
@@ -430,6 +442,8 @@ In this exercise you will learn:
 
 
 ## Exercise 2.6 - Add Action to Read Sales Order Header <a name="actionReadSalesOrderHeader"></a>
+
+You will add an Action to the Process to read the sales order header.
 
 1. In the Process Builder, select **+** next to the yes branch of the Condition, then **Actions > Browse library**.
 
@@ -454,6 +468,8 @@ In this exercise you will learn:
 
 
 ## Exercise 2.7 - Add Action to Update Sales Order <a name="actionUpdateSalesOrder"></a>
+
+Now, you will add an Action to the Process to update the sales order.
 
 1. In the Process Builder, select **+** next to the Action and choose **Actions > Browse library**.
    
@@ -482,6 +498,8 @@ In this exercise you will learn:
 
 
 ## Exercise 2.8 - Add Approval and Rejection Notifications <a name="approvalRejectionNotifications"></a>
+
+You will add approval and rejection notification forms to notify the requestors.
 
 1. In the Process Builder, select **+** next to the **Updates a sales order** Action and choose **Forms > Approval Notification**.
 
