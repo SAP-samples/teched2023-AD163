@@ -24,7 +24,7 @@ To access the Workspace on runtime:
 <br>![](/exercises/4_RunProcess/images/runtime-6.png)   
 
 ## Exercise 4.2 Change Billing Block Status in S/4HANA
-After completing these steps you will have created...
+After completing these steps you will have chaned the billing block status for the Sales Order.
 
 1. Enter Order as the Sales Order number that was created in “Create Sales Order” exercise and click on “Continue”.
 <br>![](/exercises/4_RunProcess/images/EnterSOToEdit.png)
