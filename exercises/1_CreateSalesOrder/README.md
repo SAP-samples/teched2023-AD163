@@ -1,4 +1,4 @@
-# Create Sales Order
+![image](https://github.com/SAP-samples/teched2023-AD163/assets/97021230/e1d34fac-529d-4f2e-a4f0-f01469f79738)# 1 Create Sales Order
 
 In this exercise, you will create a Sales Order by referring to an existing Sales Order. This Sales Order will not have a billing block. Please note down the Sales Order number generated at the end of the exersice. This is needed later for designing the process and end-to-end testing.
 
@@ -8,7 +8,7 @@ After completing these steps you will have a Sales Order number created without 
 
 1.	Logon to the S/4HANA system
   <br>S/4HANA Cloud URL: https://my407161.s4hana.cloud.sap/ui
-  <br>Username / Password: Provided to you (Example : AD_XXX, ******)
+  <br>Username / Password: Provided to you (Example : **AD163_XXX, Acce$$teched23**)
 
 2. Search for va01 and click "Create Sales Order - VA01"
    <br>![](/exercises/1_CreateSalesOrder/images/VA01.png)
