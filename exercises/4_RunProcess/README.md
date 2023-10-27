@@ -72,10 +72,10 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 <br>![](/exercises/4_RunProcess/images/view-1.png) <br>
 
 2. Enter the Sales Order number that you created and updated and click on Continue. <br>
-<br>![](/exercises/4_RunProcess/images/view-2.png) <br>
+<br>![](/exercises/4_RunProcess/images/view_2.png) <br>
 
 4. Check that the Billing Block is now removed by the process. <br>
-<br>![](/exercises/4_RunProcess/images/view-3.png) <br>
+<br>![](/exercises/4_RunProcess/images/view_3.png) <br>
 
 ## Summary
 
