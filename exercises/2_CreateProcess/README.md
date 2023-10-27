@@ -398,7 +398,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
   Now that you you have created your Approval Sub-Process you need to configure the inputs of the Sub-Process with the Process Content.
 
-15. Navigate back to the **Billing Block Removal Process**, select the **Approval Billing Block Removal** Sub-Process and go to Inputs section.
+15. Navigate back to the **Billing Block Removal Process**, select the **Modularize Approval Process** Sub-Process and go to Inputs section.
 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
@@ -432,7 +432,7 @@ You will add a Condition to the Process to match if change to billing block in s
 3. In the **Edit Branch Condition** window:
 
   - Select Process Content **isApproved** from **Approve Billing Block Removal**
-  - Select true
+  - Select true as value
   - Choose **Apply**
 
   ![02](./images//050.png)
