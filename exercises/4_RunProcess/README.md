@@ -39,8 +39,6 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 
 ## Exercise 4.3 Monitor Process
 
-After completing these steps you will have...
-
 1.	Login to the SAP Build Lobby 
 <br>URL : https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
 <br>Username / Password : Provided to you (Example : **AD163_047 , Acce$$teched23**)
@@ -61,9 +59,7 @@ After completing these steps you will have...
 7.	Check the rest of the steps in the Logs section
    
 
-
 ## Exercise 4.4 Approves Sales Order Update from Inbox
-After completing these steps you will have created...
 
 1. Click on “My Inbox” icon on the top right to approve the  task.
 <br>![](/exercises/ex2/images/02_01_0010.png)
