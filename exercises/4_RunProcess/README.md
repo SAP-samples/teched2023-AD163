@@ -39,25 +39,25 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 
 ## Exercise 4.3 Monitor Process
 
-1.	Login to the SAP Build Lobby 
-<br>URL : https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
-<br>Username / Password : Provided to you (Example : **AD163_047 , Acce$$teched23**)
+1.	Login to the [SAP Build Lobby](https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby) 
+
+<br>Please use the Username / Password provided to you (Example : **AD163_047 , Acce$$teched23**)
 <br>![](/exercises/4_RunProcess/images/Monitor01.png)
 
-3.	Click on “Monitor” and then click on “Process Workflow and Instances”.
+3.	Click on “Monitor” and then click on “Process Workflow and Instances”.<br>
 <br>![](/exercises/4_RunProcess/images/Monitor02.png)
 
-4.	All the processes are listed in the logs. Search for your project / definition using the appropriate filters:
+4.	All the processes are listed in the logs. Search for your project by giving your user name(example AD163_000) in Project and select your Project.<br>
 <br>![](/exercises/ex2/4_RunProcess/Monitor03.png)
 
-5.	Click on the instance with Running status to view the details of the logs
+5.	Click on the instance with Running status to view the details of the logs<br>
 <br>![](/exercises/ex2/4_RunProcess/Monitor04.png)
 
-6.	Check that event trigger has started the process from the Context section
+6.	Check that event trigger has started the process from the Context section<br>
 <br>![](/exercises/ex2/4_RunProcess/Monitor05.png)
 
-7.	Check the rest of the steps in the Logs section
-   
+7.	Check the rest of the steps in the Logs section<br>
+<br>![](/exercises/ex2/4_RunProcess/Monitor06.png)
 
 ## Exercise 4.4 Approves Sales Order Update from Inbox
 
