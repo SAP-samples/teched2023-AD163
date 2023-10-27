@@ -64,16 +64,19 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 1. Click on “My Inbox” icon on the top right to approve the  task.
 <br>![](/exercises/ex2/images/02_01_0010.png)
 
-2.	Submit and check the status in S/4HANA.
+2.	Review the approval form and click Submit.
 
 ## Exercise 4.5 View updated billing
 
-1. Click on Display Sales Order (VA03) from your Workspace
-<br>![](/exercises/4_RunProcess/images/view-1.png)
+1. Click on Display Sales Order (VA03) from your Workspace. <br>
+<br>![](/exercises/4_RunProcess/images/view-1.png) <br>
 
-   
+2. Enter the Sales Order number that you created and updated and click on Continue. <br>
+<br>![](/exercises/4_RunProcess/images/view-2.png) <br>
+
+4. Check that the Billing Block is now removed by the process. <br>
+<br>![](/exercises/4_RunProcess/images/view-3.png) <br>
+
 ## Summary
 
-You've now ...
-
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+You've now tested the end to end process and also checked the status update in the SAP S/4HANA. This marks the completion of hands-on for today's session.
