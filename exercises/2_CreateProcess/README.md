@@ -110,8 +110,8 @@ You will add a Condition to the Process that will match the value of the sales o
 3. Select the **Condition** control and perform the following:
 
   - Change the **Step Name** to: sales order matches?
-  - Change the **Branch Name** to: yes.
-  - Choose **Open Condition Editor** to define the Condition.
+  - Change the **Branch Name** to: yes
+  - Choose **Open Condition Editor** to define the Condition
 
   ![02](./images//012.png)
 
@@ -135,11 +135,11 @@ Next, you will add an Action to the Process that will read the sales order items
 
 > With Actions, you can embed external skills and capabilities into your business process projects by uploading an open API specification file in JSON format. Action projects allow external systems and solutions to communicate with SAP Build Process Automation.
 
-1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** condition, then choose **Actions > Browse library**.
+1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** Condition, then choose **Actions > Browse library**.
    
   ![02](./images//015.png)
 
-2. In the **Browse library** pop-up, select the **Reads all items of a sales order** action from **Project: Sales Order** and choose **Add**.
+2. In the **Browse library** pop-up, select the **Reads all items of a sales order** Action from **Project: Sales Order** and choose **Add**.
 
   ![02](./images//016.png)
 
@@ -173,7 +173,7 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
 
   ![02](./images//020.png)
 
-3. In the **General** section of the Sub-Process, select **Edit Process**.
+3. Choose **Save** and then in the **General** section of the Sub-Process, select **Edit Process**.
 
   ![02](./images//021.png)
 
@@ -181,8 +181,8 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
 
 4. In the **General** section of the Process Details:
 
-  - Change the **Process name** to Modularize Approval Process
-  - Change the **Subject** to SubProcess to approve changes to billing block in sales order
+  - Change the **Process name** to: Modularize Approval Process
+  - Change the **Subject** to: SubProcess to approve changes to billing block in sales order
 
   ![02](./images//021a.png)
 
@@ -213,9 +213,10 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
   - Enter **Name:** isApproved, select Boolean as **Type** and check Required
   - Choose **Apply**
 
+9. Save your work.
+
   ![02](./images//021e.png)
 
-9. Save your work.
     
 ### Exercise 2.4.1 - Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
 
@@ -228,12 +229,12 @@ Now, you will add a Decision to the Process that will determine approver based o
 2. In the **Create Decision** pop-up:
 
   - Enter **Name:** Determine Approver
-  - Enter **Description:** Determine approver based on sales order distribution channel and sold to party
+  - Enter **Description:** Determines approver based on sales order distribution channel and sold to party
   - Choose **Create**
 
   ![02](./images//023.png)
 
-3. Choose **Save** and then **Edit Decision**.
+3. Choose **Save** and then in the **General** section of the Decision, select **Edit Decision**.
 
   ![02](./images//024.png)
 
@@ -241,7 +242,7 @@ Now, you will add a Decision to the Process that will determine approver based o
 
 4. Choose **Add Input Parameter**:
 
-  - Enter **Name:** SalesOrderInp
+  - Enter **Name:** SalesOrderInput
   - Enter **Description:** Sales order details
   - Select **Type:** Sales Order
 
@@ -271,7 +272,7 @@ Now, you will add a Decision to the Process that will determine approver based o
 
 9. Now you will configure the Conditions:
 
-  - Under **Vocabulary > Input/Output**, select **SalesOrderInp > SoldToParty**
+  - Under **Vocabulary > Input/Output**, select **SalesOrderInput > SoldToParty**
   - Select as **Operator:** =
   - Choose **Next Step**
 
@@ -302,17 +303,17 @@ Now, you will add a Decision to the Process that will determine approver based o
 
   ![02](./images//032.png)
 
-  - Under **SalesOrderInp**, map **BillingBlockStatus** to **Process Inputs > SalesOrderInfo > BillingBlockStatus**.
+  - Under **SalesOrderInput**, map **BillingBlockStatus** to **Process Inputs > SalesOrderInfo > BillingBlockStatus**
 
-  - Under **SalesOrderInp**, map **DistributionChannel** to **Process Inputs > SalesOrderInfo > DistributionChannel**.
+  - Under **SalesOrderInput**, map **DistributionChannel** to **Process Inputs > SalesOrderInfo > DistributionChannel**
     
-  - Under **SalesOrderItemDetails**, bind list to **Process Inputs > SalesOrderInfo > list SalesOrderItemDetails**.
+  - Under **SalesOrderItemDetails**, bind list to **Process Inputs > SalesOrderInfo > list SalesOrderItemDetails**
 
   ![02](./images//033.png)
 
-  - Under **SalesOrderInp**, map **SalesOrderNumber** to **Process Inputs > SalesOrderInfo > SalesOrderNumber**.
+  - Under **SalesOrderInput**, map **SalesOrderNumber** to **Process Inputs > SalesOrderInfo > SalesOrderNumber**
     
-  - Under **SalesOrderInp**, map **SoldToParty** to **Process Inputs > SalesOrderInfo > SoldToParty**.
+  - Under **SalesOrderInput**, map **SoldToParty** to **Process Inputs > SalesOrderInfo > SoldToParty**
 
 14.  Save your work.
 
@@ -327,7 +328,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
   ![02](./images//035.png)
 
-2. Choose **Save** and then **Edit Form**.
+2. Choose **Save** and then in the **General** section of the Approval Form, select **Edit Form**.
 
   ![02](./images//036.png)
 
@@ -339,14 +340,14 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
 4. Perform the following actions:
 
-  - Under **Items Details > Configuration**, check Read Only
   - Enter **New Table:** Items Details
+  - Under **Items Details > Configuration**, check Read Only
   - Select the **+**
   - Select **Text** to add a new Text to the table.
 
   ![02](./images//038.png)
 
-5. Enter **New Text:** Item and add a new Text.
+1. Enter **New Text:** Item and add a new Text.
 
   ![02](./images//039.png)
 
@@ -360,7 +361,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
 
 9. Select the Approval Form. In the **General** section of the Form:
 
-  - Enter **Subject:** Review and approve changes in billing block for sales order: and select **SalesOrderNumber** from the **Process Inputs**.
+  - Under **Subject**, enter: **Review and approve changes in billing block for sales order:** and select **SalesOrderNumber** from the **Process Inputs**
   - Under **Recipients**, map **Users** to **Determine Approver > ApproverOutput > Email**
 
   ![02](./images//041.png)
