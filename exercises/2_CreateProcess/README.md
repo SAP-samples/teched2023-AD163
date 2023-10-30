@@ -343,11 +343,11 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
   - Enter **New Table:** Items Details
   - Under **Items Details > Configuration**, check Read Only
   - Select the **+**
-  - Select **Text** to add a new Text to the table.
+  - Select **Text** to add a new Text to the table
 
   ![02](./images//038.png)
 
-1. Enter **New Text:** Item and add a new Text.
+5. Enter **New Text:** Item and add a new Text.
 
   ![02](./images//039.png)
 
@@ -431,7 +431,7 @@ You will add a Condition to the Process to match if change to billing block in s
 
 3. In the **Edit Branch Condition** window:
 
-  - Select Process Content **isApproved** from **Approve Billing Block Removal**
+  - Select Process Content **isApproved** from **Modularize Approval Process**
   - Select true as value
   - Choose **Apply**
 
@@ -452,7 +452,7 @@ You will add an Action to the Process to read the sales order header.
 
   ![02](./images//051.png)
 
-1. In the **Browse library** pop-up, select **Reads the header of a sales order** Action and choose **Add**.
+2. In the **Browse library** pop-up, select **Reads the header of a sales order** Action and choose **Add**.
    
   ![02](./images//052.png)
 
@@ -478,13 +478,13 @@ Now, you will add an Action to the Process to update the sales order.
    
   ![02](./images//055.png)
 
-1. In the **Browse library** pop-up, select **Updates a sales order** Action and choose **Add**.
+2. In the **Browse library** pop-up, select **Updates a sales order** Action and choose **Add**.
    
   ![02](./images//056.png)
 
 3. In the **General** section of the Action:
 
-  - Change the **Step Name:** Updates a sales order
+  - Change the **Step Name** to: Updates a sales order
   - Select the **Destination variable:** S4HANADestination
 
   ![02](./images//057.png)
@@ -542,7 +542,7 @@ You will add approval and rejection notification forms to notify the requestors.
    
 8. Drag and drop a **Paragraph** field after the Headline field and enter as **New Paragraph:** The request to remove the billing block on the sales order has been rejected. You can find the reason of rejection and the details of your sales order below:
     
-9. Drag ad drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection. 
+9. Drag and drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection. 
     
 10. Check Read Only as Configuration.
 
@@ -575,7 +575,7 @@ You will add approval and rejection notification forms to notify the requestors.
 
   - Map **Billing Block Status** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **Distribution Channel** to **Process Inputs > data > DistributionChannel**
-  - Map **Reason for Rejection** to **Approve Billing Block Removal > ApproverComments**
+  - Map **Reason for Rejection** to **Modularize Approval Process > ApproverComments**
   - Map **Sales Order Number** to **Process Inputs > data > SalesOrder**
   - Map **Sold-To-Party** to **Process Inputs > data > SoldToParty**
   - Choose **Save**
