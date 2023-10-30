@@ -56,17 +56,25 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 6.	Check that event trigger has started the process from the Context section<br>
 <br>![](/exercises/4_RunProcess/images/Monitor05.png)
 
-7.	Check the rest of the steps in the Logs section<br>
-<br>![](/exercises/4_RunProcess/images/Monitor06.png)
+7.	Check the rest of the steps in the Logs section. Note that currently there is a subprocess running. Click on the Instance ID to see more details.<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess11.jpg)
+
+8.	Details of the sub-process are shown in the Logs. There is approval task in My Inbox.Click on My Inbox to go to the approval form.<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess12.jpg)
 
 ## Exercise 4.4 Approves Sales Order Update from Inbox
 
-1. Click on “My Inbox” icon on the top right to approve the  task.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+1. In My Inbox, the approval form shows the details for the Sales Order. Review , add comments, select the approve checkbox and click on **Approve Billing Block Removal** button.
+<br>![](/exercises/4_RunProcess/images/RunProcess13.jpg)
 
-2.	Review the approval form and click Submit.
+2.	There is another task for acknowlegement in My Inbox. Click on "Click to Acknowledge".
+<br>![](/exercises/4_RunProcess/images/RunProcess15.jpg)
 
-## Exercise 4.5 View updated billing
+3. The process is completed successfully.<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess16.jpg)
+
+
+## Exercise 4.5 View updated billing block in SAP S/4HANA
 
 1. Click on Display Sales Order (VA03) from your Workspace. <br>
 <br>![](/exercises/4_RunProcess/images/view-1.png) <br>
