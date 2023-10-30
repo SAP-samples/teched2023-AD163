@@ -18,7 +18,7 @@ This repository contains the material for the SAP TechEd 2023 session called **A
 
 This session introduces attendees how to modify or extend standard business processes from SAP S/4HANA. Leveraging SAP Build Process Automation and SAP Build Work Zone, advanced edition services of SAP Build solutions to enhance the experience of managing billing block status change in SAP S/4HANA cloud.
 
-![02](./exercises/2_CreateProcess/images/E2EExcerciseFlow.png)
+![02](./exercises/2_CreateProcess/images/E2EFlow.png)
 
 
 In this scenario: <br>
