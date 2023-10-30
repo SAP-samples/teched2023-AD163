@@ -57,14 +57,28 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 <br>![](/exercises/4_RunProcess/images/Monitor05.png)
 
 7.	Check the rest of the steps in the Logs section<br>
-<br>![](/exercises/4_RunProcess/images/Monitor06.png)
+<br>![](/exercises/4_RunProcess/images/RunProcess11.png)
+
+8.	Check the rest of the steps in the Logs section<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess12.png)
+
+9.	Check the rest of the steps in the Logs section<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess13.png)
+
 
 ## Exercise 4.4 Approves Sales Order Update from Inbox
 
 1. Click on “My Inbox” icon on the top right to approve the  task.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+<br>![](/exercises/ex2/images/RunProcess14.png)
 
 2.	Review the approval form and click Submit.
+
+3. Check the rest of the steps in the Logs section<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess15.png)
+
+
+4.	Check the rest of the steps in the Logs section<br>
+<br>![](/exercises/4_RunProcess/images/RunProcess16.png)
 
 ## Exercise 4.5 View updated billing
 
