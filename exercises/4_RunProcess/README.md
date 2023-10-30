@@ -74,7 +74,7 @@ Note: Now the event “Billing block status changed” will be triggered from SA
 <br>![](/exercises/4_RunProcess/images/RunProcess16.jpg)
 
 
-## Exercise 4.5 View updated billing
+## Exercise 4.5 View updated billing block in SAP S/4HANA
 
 1. Click on Display Sales Order (VA03) from your Workspace. <br>
 <br>![](/exercises/4_RunProcess/images/view-1.png) <br>
