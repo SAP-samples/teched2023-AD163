@@ -139,7 +139,7 @@ Next, you will add an Action to the Process that will read the sales order items
    
   ![02](./images//015.png)
 
-2. In the **Browse library** pop-up, select the **Reads all items of a sales order** Action from **Project: Sales Order** and choose **Add**.
+1. In the **Browse library** pop-up, select the **Reads all items of a sales order** Action and choose **Add**.
 
   ![02](./images//016.png)
 
@@ -452,7 +452,7 @@ You will add an Action to the Process to read the sales order header.
 
   ![02](./images//051.png)
 
-2. In the **Browse library** pop-up, select **Reads the header of a sales order** Action from **Project: Sales Order** and choose **Add**.
+1. In the **Browse library** pop-up, select **Reads the header of a sales order** Action and choose **Add**.
    
   ![02](./images//052.png)
 
@@ -463,7 +463,7 @@ You will add an Action to the Process to read the sales order header.
 
   ![02](./images//053.png)
 
-4. Go to the **inputs** section of the Action and map **SalesOrder** to **Process Inputs > data > salesOrder**.
+4. Go to the **inputs** section of the Action and map **SalesOrder** to **Process Inputs > data > SalesOrder**.
 
 5. Choose **Save**.
 
@@ -478,7 +478,7 @@ Now, you will add an Action to the Process to update the sales order.
    
   ![02](./images//055.png)
 
-2. In the **Browse library** pop-up, select **Updates a sales order** Action from **Project: Sales Order** and choose **Add**.
+1. In the **Browse library** pop-up, select **Updates a sales order** Action and choose **Add**.
    
   ![02](./images//056.png)
 
@@ -510,7 +510,7 @@ You will add approval and rejection notification forms to notify the requestors.
 
 2. In the **General** section of the Form:
 
-  - Enter **Subject** as **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Under **Subject**, enter: **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
   - Under **Recipients > Users**, enter your user such as **AD163_046**
 
   ![02](./images//061.png)
@@ -566,7 +566,7 @@ You will add approval and rejection notification forms to notify the requestors.
 
 16. In the **General** section of the Form:
 
-  - Enter **Subject** as **Removal of billing block is rejected for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
+  - Under **Subject**, enter: **Removal of billing block is rejected for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
   - Under **Recipients > Users**, enter your user such as **AD163_046**
 
   ![02](./images//068.png)
