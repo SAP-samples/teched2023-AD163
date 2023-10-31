@@ -26,7 +26,7 @@ Open the SAP Build Lobby from this link:  [SAP Build Lobby](https://ad163-hxj0v9
   - Follow this tutorial to access SAP Build Work Zone from the SAP Build Lobby: [Access SAP Build Work Zone from the SAP Build Lobby](https://developers.sap.com/tutorials/workzone-access-sap-build.html).
 
 ### Create and design your Workspace
-Follow this tutorial to create and design your Sales Management Workspace:  [Add a Workspace to SAP Build Work Zone, advanced edition](https://developers.sap.com/tutorials/workzone-build-2-workspace.html).
+Follow this tutorial to create and design your Sales Management Workspace:  [Add a Workspace to SAP Build Work Zone, advanced edition](https://developers.sap.com/tutorials/workzone-build-2-workspace.html). Please ignore any pre-requisites from the tutorial itself. 
 
 ### Integrate S/4HANA Cloud apps to your Workspace
 
