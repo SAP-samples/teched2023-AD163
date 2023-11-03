@@ -515,7 +515,7 @@ You will add approval and rejection notification forms to notify the requestors.
 2. In the **General** section of the Form:
 
   - Under **Subject**, enter: **Removal of billing block is approved for sales order:** and map the Process Content: **Process Inputs > data > SalesOrder**
-  - Under **Recipients > Users**, enter your user such as **AD163_046**
+  - Under **Recipients > Users**, enter your user such as **AD163_XXX**
 
   ![02](./images//061.png)
 
