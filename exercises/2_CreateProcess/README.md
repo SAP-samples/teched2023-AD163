@@ -33,6 +33,7 @@ In this exercise you will learn:
 
 ## Exercise 2.1 - Add Event Trigger to Process <a name="eventTrigger"></a>
   Navigate to SAP Build Lobby: https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
+  The credentials are same as that of the previous exersice.
 
 1. In the Lobby, select the three dots next to project **AD163_XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
