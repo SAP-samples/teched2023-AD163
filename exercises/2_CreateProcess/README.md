@@ -41,7 +41,7 @@ In this exercise you will learn:
 
 2. In the **Save as New Project** pop-up:
 
-    **Please don not copy the Editable version. Use only Deployed version 1.0.0 when you are creating new project.**
+    **Please do not copy the Editable version. Use only Deployed version 1.0.0 when you are creating a new project.**
 
   - Select **1.0.0** as **Version**
   - Replace the XXX in the **Project Name** with your user name
