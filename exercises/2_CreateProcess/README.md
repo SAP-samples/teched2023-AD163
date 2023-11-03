@@ -51,6 +51,7 @@ In this exercise you will learn:
   Your project starts getting created in the Lobby. 
 
 3. Wait until the project is successfully created and then click on the newly created project.
+   Please ensure that you **DO NOT** edit the template project. It will be used by all participants to copy and edit for the exercise.
 
   ![02](./images//003.png)
 
