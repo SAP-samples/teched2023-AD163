@@ -33,7 +33,7 @@ In this exercise you will learn:
 
 ## Exercise 2.1 - Add Event Trigger to Process <a name="eventTrigger"></a>
   Navigate to SAP Build Lobby: https://ad163-hxj0v9xc.eu10.build.cloud.sap/lobby
-  The credentials are same as that of the previous exersice.
+  The credentials are same as that of the previous exercise.
 
 1. In the Lobby, select the three dots next to project **AD163_XXX - Manage Billing Block in Sales Order**, then choose **Save as New Project**.
 
@@ -41,14 +41,16 @@ In this exercise you will learn:
 
 2. In the **Save as New Project** pop-up:
 
-  - Select **Editable version** as **Version**
+    **Please don not copy the Editable version. Use only Deployed version 1.0.0 when you are creating new project.**
+
+  - Select **1.0.0** as **Version**
   - Replace the XXX in the **Project Name** with your user name
   - You may update the **Description**
   - Choose **Save as new**
 
-  ![02](./images//002.png)
+  ![02](./images//02.png)
 
-  Your project starts getting created in the Lobby. 
+  Your project starts getting created in the Lobby.
 
 3. Wait until the project is successfully created and then click on the newly created project.
    Please ensure that you **DO NOT** edit the template project. It will be used by all participants to copy and edit for the exercise.
@@ -56,7 +58,7 @@ In this exercise you will learn:
   ![02](./images//003.png)
 
   In the **Overview** tab of your project, select **Create > Process**.
- 
+
   ![02](./images//004.png)
 
 4. In the **Create Process** pop-up:
@@ -67,8 +69,8 @@ In this exercise you will learn:
 
   ![02](./images//005.png)
 
-  The Process gets added in the process builder. Now you will add an Event Trigger to the Process. 
-  
+  The Process gets added in the process builder. Now you will add an Event Trigger to the Process.
+
   > Event Triggers onboard and listen to back-end events emitted from an external source system and react to such events by triggering artifacts such as processes and automations.
 
 5. Select the **+** next to the **Trigger** and then **Events > + New Event Trigger**.
@@ -89,7 +91,7 @@ In this exercise you will learn:
   ![02](./images//008.png)
 
 8. In **General** section of the **Process Details**:
-   
+
   - Enter **Subject:** Process to approve the removal of billing block and updating the sales order and select the Process Input **SalesOrder**
   - As **Business Key**, select the Process Input **SalesOrder**
 
@@ -102,7 +104,7 @@ In this exercise you will learn:
 You will add a Condition to the Process that will match the value of the sales order you created.
 
 1. In the Process Builder, select **+ > Controls > Condition**.
-   
+
   ![02](./images//010.png)
 
 2. Connect the outgoing flow of the Default branch to the End activity.
@@ -133,12 +135,12 @@ You will add a Condition to the Process that will match the value of the sales o
 
 ## Exercise 2.3 - Add Action to Read Sales Order Items <a name="actionReadSalesOrderItems"></a>
 
-Next, you will add an Action to the Process that will read the sales order items. 
+Next, you will add an Action to the Process that will read the sales order items.
 
 > With Actions, you can embed external skills and capabilities into your business process projects by uploading an open API specification file in JSON format. Action projects allow external systems and solutions to communicate with SAP Build Process Automation.
 
 1. In the Process Builder, select the **+** next to the **yes** branch of the **sales order matches?** Condition, then choose **Actions > Browse library**.
-   
+
   ![02](./images//015.png)
 
 1. In the **Browse library** pop-up, select the **Reads all items of a sales order** Action and choose **Add**.
@@ -158,7 +160,7 @@ Next, you will add an Action to the Process that will read the sales order items
 
   ![02](./images//018.png)
 
-  
+
 ## Exercise 2.4 - Create Approval Sub-Process <a name="approvalSubProcess"></a>
 
 Next, you will add a Sub-Process to your main Process in the process builder, allowing you to modularize the approval process.
@@ -168,7 +170,7 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
   ![02](./images//019.png)
 
 2. In the **Create Process** pop-up:
-   
+
   - Enter **Name:** Approve Billing Block Removal
   - Enter **Description:** Process to modularize the approval process
   - Choose **Create**
@@ -219,7 +221,7 @@ Next, you will add a Sub-Process to your main Process in the process builder, al
 
   ![02](./images//021e.png)
 
-    
+
 ### Exercise 2.4.1 - Add Decision to Determine Approver List <a name="decisionDetermineApproverList"></a>
 
 Now, you will add a Decision to the Process that will determine approver based on sales order distribution and sold to party.
@@ -284,7 +286,7 @@ Now, you will add a Decision to the Process that will determine approver based o
 
   - Under **Vocabulary**, select **ApproverOutput > Email**
   - Choose **Next Step**
-  
+
   ![02](./images//029.png)
 
 11. You may review your Decision Table and choose **Create**.
@@ -308,13 +310,13 @@ Now, you will add a Decision to the Process that will determine approver based o
   - Under **SalesOrderInput**, map **BillingBlockStatus** to **Process Inputs > SalesOrderInfo > BillingBlockStatus**
 
   - Under **SalesOrderInput**, map **DistributionChannel** to **Process Inputs > SalesOrderInfo > DistributionChannel**
-    
+
   - Under **SalesOrderItemDetails**, bind list to **Process Inputs > SalesOrderInfo > list SalesOrderItemDetails**
 
   ![02](./images//033.png)
 
   - Under **SalesOrderInput**, map **SalesOrderNumber** to **Process Inputs > SalesOrderInfo > SalesOrderNumber**
-    
+
   - Under **SalesOrderInput**, map **SoldToParty** to **Process Inputs > SalesOrderInfo > SoldToParty**
 
 14.  Save your work.
@@ -354,7 +356,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
   ![02](./images//039.png)
 
 6. Enter **New Text:** Material and repeat step 5 to add two other Texts: ItemDescription and RequestedQuantity.
-   
+
 7. Save your form.
 
   ![02](./images//040.png)
@@ -380,7 +382,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
   ![02](./images//042.png)
 
 11. Connect the Reject node of the Approval Form to the End activity.
-    
+
   ![02](./images//043.png)
 
   You will map the Process Outputs to the Process Content of the Approval Form.
@@ -390,7 +392,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
   ![02](./images//044.png)
 
 13. Under Process Outputs:
-  
+
   - Map **ApproverComments** to **Approval Form > Approver's Comment**
   - Map **isApproved** to **Approval Form > Select the checkbox...**
 
@@ -405,7 +407,7 @@ You will add the Approval Form to the Process and add a Sales Order Items Table 
   - Map **SalesOrderInfo > BillingBlockStatus** to **Process Inputs > data > OverallBillingBlockStatus**
   - Map **SalesOrderInfo > DistributionChannel** to **Process Inputs > data > DistributionChannel**
   - Map **SalesOrderItemDetails** to **Reads Sales Order Items > result > Collection of A_SalesOrderItemType > list results**
-  
+
   ![02](./images//046.png)
 
   - Map **SalesOrderInfo > SalesOrderNumber** to **Process Inputs > data > SalesOrder**
@@ -442,7 +444,7 @@ You will add a Condition to the Process to match if change to billing block in s
 4. Connect the outgoing Default branch of the Condition to the End activity.
 
 5. Choose **Save**.
-   
+
    ![02](./images//050a.png)  
 
 
@@ -455,7 +457,7 @@ You will add an Action to the Process to read the sales order header.
   ![02](./images//051.png)
 
 2. In the **Browse library** pop-up, select **Reads the header of a sales order** Action and choose **Add**.
-   
+
   ![02](./images//052.png)
 
 3. In the **General** section of the Action:
@@ -477,11 +479,11 @@ You will add an Action to the Process to read the sales order header.
 Now, you will add an Action to the Process to update the sales order.
 
 1. In the Process Builder, select **+** next to the Action and choose **Actions > Browse library**.
-   
+
   ![02](./images//055.png)
 
 2. In the **Browse library** pop-up, select **Updates a sales order** Action and choose **Add**.
-   
+
   ![02](./images//056.png)
 
 3. In the **General** section of the Action:
@@ -531,7 +533,7 @@ You will add approval and rejection notification forms to notify the requestors.
 4. Navigate to the **Overview** tab.
 
 5. Select the three dots next to the **Approval Notification** then select **Duplicate**.
-   
+
   ![02](./images//063.png)
 
 6. In the **Duplicate Artifact** pop-up, enter as **Name:** Rejection Notification and choose **Duplicate**.
@@ -541,21 +543,21 @@ You will add approval and rejection notification forms to notify the requestors.
   The Form Builder opens. Now, you will update your Rejection Notification to reflect rejection.
 
 7. Change the **Headline** to: Billing Block Removal Rejected
-   
+
 8. Drag and drop a **Paragraph** field after the Headline field and enter as **New Paragraph:** The request to remove the billing block on the sales order has been rejected. You can find the reason of rejection and the details of your sales order below:
-    
-9. Drag and drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection. 
-    
+
+9. Drag and drop a **Text Area** field after the Paragraph and enter as **New Text Area:** Reason for Rejection.
+
 10. Check Read Only as Configuration.
 
   ![02](./images//065.png)
 
 11. Now drag and drop a **Paragraph** field after the **Text Area** and enter as **New Paragraph:** Your Sales Order Details:
-    
+
 12. Drag and drop a **Text** field after Distribution Channel. Enter as **New Text:** Billing Block Status.
-    
+
 13. Check Read Only as Configuration.
-    
+
 14. Save your Form.
 
   ![02](./images//066.png)
@@ -591,13 +593,13 @@ Once your project is free of errors, you may release and deploy it.
 1. Choose the **Release** button on the top right.
 
   ![02](./images//070.png)
-   
+
 2. In the **Release Project** pop-up, choose **Release**.
 
   ![02](./images//071.png)
 
  You will see a change of status indicating that your project is released.
- 
+
  3. Choose the **Deploy** button to deploy the project.
 
   ![02](./images//072.png)
@@ -623,4 +625,3 @@ Once your project is free of errors, you may release and deploy it.
 Your project is released and deployed in SAP Build and you can start creating and designing your Workspace using SAP Build Work Zone, advanced edition.
 
 Continue to - [Exercise 3 - Create Workspace](../3_CreateWorkspace/README.md)
-
