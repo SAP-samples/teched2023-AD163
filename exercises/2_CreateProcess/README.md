@@ -296,7 +296,7 @@ Now, you will add a Decision to the Process that will determine approver based o
 12. Configure your Decision Table:
 
   - Under **SoldToParty =**, enter '17100001'
-  - Under **Email**, enter your user such as 'AD163_046'
+  - Under **Email**, enter your user such as 'AD163_XXX'
   - Choose **Save**
 
   ![02](./images//031.png)
